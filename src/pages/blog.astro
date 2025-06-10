@@ -1,5 +1,5 @@
 ---
-
+const pageTitle = "Agnostic Tarot Blog"
 ---
 
 <html lang="en">
@@ -17,14 +17,20 @@
       name="generator"
       content={Astro.generator}
     />
-    <title>Agnostic Tarot | BLOG</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
-    <h1>Agnostic Tarot BLOG</h1>
+    <h1>{pageTitle}</h1>
     <ul>
       <li><a href="/">Home</a></li>
       <li><a href="/about">About</a></li>
       <li><a href="/blog">Blog</a></li>
+    </ul>
+
+    <ul>
+      <li><a href="/posts/post-1">The Agnostic Method</a></li>
+      <li><a href="/posts/post-2">Learning the Cards</a></li>
+      <li><a href="/posts/post-3">Buying a Deck</a></li>
     </ul>
   </body>
 </html>

@@ -1,5 +1,29 @@
 ---
+const pageTitle = "About Agnostic Tarot"
 
+const identity = {
+  firstName: "Chris",
+  country: "Minnesota",
+  occupation: "Card Reader",
+  hobbies: ["photography", "birdwatching", "coding"],
+}
+
+const skills = [
+  "tarot",
+  "cartomancy",
+  "scrying",
+  "numerology",
+  "astrology",
+  "energy-rituals",
+]
+
+const happy = true
+const finished = false
+const goal = 3
+
+const skillColor = "navy"
+const fontWeight = "bold"
+const textCase = "uppercase"
 ---
 
 <html lang="en">
@@ -17,10 +41,22 @@
       name="generator"
       content={Astro.generator}
     />
-    <title>About Agnostic Tarot</title>
+    <style define:vars={{ skillColor, fontWeight, textCase }}>
+      h1 {
+        color: purple;
+        font-size: 4rem;
+      }
+      .skills {
+        color: green;
+        color: var(--skillColor);
+        font-weight: var(--fontWeight);
+        text-transform: var(--textCase);
+      }
+    </style>
+    <title>{pageTitle}</title>
   </head>
   <body>
-    <h1>About Agnostic Tarot</h1>
+    <h1>{pageTitle}</h1>
     <ul>
       <li><a href="/">Home</a></li>
       <li><a href="/about">About</a></li>
@@ -43,5 +79,24 @@
       and knowledge grows, cards will begin to hold their own nuanced meanings
       for you.
     </p>
+    <p>
+      I have spent over 30 years studying tarot and the mysterious side of life.
+      Some of my skills are listed below:
+    </p>
+    <ul>
+      {skills.map((skill) => <li class="skills">{skill}</li>)}
+    </ul>
+
+    {happy && <p>I am happy to be learning Astro!</p>}
+
+    {finished && <p>I finished this tutorial!</p>}
+
+    {
+      goal === 3 ? (
+        <p>My goal is to finish in 3 days.</p>
+      ) : (
+        <p>My goal is not 3 days.</p>
+      )
+    }
   </body>
 </html>
