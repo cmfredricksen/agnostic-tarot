@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css"
+import Header from "../components/Header.astro"
 const pageTitle = "About Agnostic Tarot"
 
 const identity = {
@@ -57,12 +58,7 @@ const textCase = "uppercase"
     <title>{pageTitle}</title>
   </head>
   <body>
-    <h1>{pageTitle}</h1>
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/blog">Blog</a></li>
-    </ul>
+    <Header />
     <p>
       Agnostic tarot is for everyone. Tarot works, it is an effective tool for
       creative thinking. There are many theories and superstitions about card

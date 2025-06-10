@@ -1,0 +1,30 @@
+---
+const links = [
+  {
+    title: "home",
+    path: "/",
+  },
+  {
+    title: "about",
+    path: "/about",
+  },
+  {
+    title: "blog",
+    path: "/blog",
+  },
+]
+---
+
+<nav>
+  {links.map((link) => <a href={link.path}>{link.title}</a>)}
+</nav>
+
+<style>
+  nav {
+    padding: 1rem;
+  }
+  nav a {
+    color: black;
+    margin: 0 1rem;
+  }
+</style>
