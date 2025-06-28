@@ -1,6 +1,7 @@
 ---
 title: "Buying a Deck"
 path: "/posts/post-3"
+layout: "../../layouts/PostLayout.astro"
 ---
 
 ## Buying a Deck

@@ -1,0 +1,29 @@
+---
+import BaseHTML from "./BaseHTML.astro"
+import type { MarkdownLayoutProps } from "astro"
+
+type Props = MarkdownLayoutProps<{
+  // Define frontmatter props here
+  title: string
+  author: string
+  date: string
+}>
+
+const { frontmatter } = Astro.props
+---
+
+<BaseHTML title={frontmatter.title}>
+  <article>
+    <h2>{frontmatter.title}</h2>
+    <slot />
+  </article>
+</BaseHTML>
+
+<style>
+  article {
+    width: 66%;
+    margin: 1rem auto;
+    font-family: "Courier New", Courier, monospace;
+    color: darkblue;
+  }
+</style>

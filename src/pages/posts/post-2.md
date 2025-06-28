@@ -1,6 +1,7 @@
 ---
 title: 'Learning the Cards'
 path: '/posts/post-2'
+layout: '../../layouts/PostLayout.astro'
 ---
 
 ## Learning the Cards
