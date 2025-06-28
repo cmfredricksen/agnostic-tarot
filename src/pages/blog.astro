@@ -1,12 +1,36 @@
 ---
 import "../styles/global.css"
 import BaseHTML from "../layouts/BaseHTML.astro"
+import type { MarkdownInstance } from "astro"
+interface Frontmatter {
+  title: string
+  description?: string
+  path?: string
+}
+
+const posts = Object.values(
+  import.meta.glob<MarkdownInstance<Frontmatter>>("./posts/**/*.md", {
+    eager: true,
+  })
+)
 ---
 
 <BaseHTML title="Agnostic Tarot Blog">
   <ul>
-    <li><a href="/posts/post-1">The Agnostic Method</a></li>
-    <li><a href="/posts/post-2">Learning the Cards</a></li>
-    <li><a href="/posts/post-3">Buying a Deck</a></li>
+    {
+      posts.map((post) => (
+        <a href={post.frontmatter.path}>{post.frontmatter.title}</a>
+      ))
+    }
   </ul>
 </BaseHTML>
+
+<style>
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+  ul a {
+    margin: 1rem 0;
+  }
+</style>

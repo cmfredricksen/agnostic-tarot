@@ -1,3 +1,8 @@
+---
+title: "Buying a Deck"
+path: "/posts/post-3"
+---
+
 ## Buying a Deck
 
 Buying a deck seems pretty straight forward and simple until you go to do it. There is actually a lot to consider if you are getting a deck to practice with. If you are getting a deck for intuition or as a collector then you can just choose whichever one you like.

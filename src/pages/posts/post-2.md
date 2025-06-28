@@ -1,3 +1,8 @@
+---
+title: 'Learning the Cards'
+path: '/posts/post-2'
+---
+
 ## Learning the Cards
 
 The first step is learning the cards. I mean the tarot structure and it's meaning. A tarot deck is made up of 78 cards as follows:
