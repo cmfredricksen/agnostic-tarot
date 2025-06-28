@@ -1,99 +1,27 @@
 ---
 import "../styles/global.css"
-import Header from "../components/Header.astro"
-const pageTitle = "About Agnostic Tarot"
-
-const identity = {
-  firstName: "Chris",
-  country: "Minnesota",
-  occupation: "Card Reader",
-  hobbies: ["photography", "birdwatching", "coding"],
-}
-
-const skills = [
-  "tarot",
-  "cartomancy",
-  "scrying",
-  "numerology",
-  "astrology",
-  "energy-rituals",
-]
-
-const happy = true
-const finished = false
-const goal = 3
-
-const skillColor = "navy"
-const fontWeight = "bold"
-const textCase = "uppercase"
+import BaseHTML from "../layouts/BaseHTML.astro"
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link
-      rel="icon"
-      href="https://fav.farm/🔥"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width"
-    />
-    <meta
-      name="generator"
-      content={Astro.generator}
-    />
-    <style define:vars={{ skillColor, fontWeight, textCase }}>
-      h1 {
-        color: purple;
-        font-size: 4rem;
-      }
-      .skills {
-        color: green;
-        color: var(--skillColor);
-        font-weight: var(--fontWeight);
-        text-transform: var(--textCase);
-      }
-    </style>
-    <title>{pageTitle}</title>
-  </head>
-  <body>
-    <Header />
-    <p>
-      Agnostic tarot is for everyone. Tarot works, it is an effective tool for
-      creative thinking. There are many theories and superstitions about card
-      reading and how it works.
-    </p>
-    <p>
-      I believe that the randomness and the images and the colors trigger our
-      minds. There is no magic required. No gods, no angels, no rituals, no
-      rules. To be clear, these things can enhance the experience - but are not
-      required.
-    </p>
-    <p>
-      There is no authority in tarot. There is the wisdom gained by those who
-      have gone before, and it holds great value. But as experience is gained,
-      and knowledge grows, cards will begin to hold their own nuanced meanings
-      for you.
-    </p>
-    <p>
-      I have spent over 30 years studying tarot and the mysterious side of life.
-      Some of my skills are listed below:
-    </p>
-    <ul>
-      {skills.map((skill) => <li class="skills">{skill}</li>)}
-    </ul>
-
-    {happy && <p>I am happy to be learning Astro!</p>}
-
-    {finished && <p>I finished this tutorial!</p>}
-
-    {
-      goal === 3 ? (
-        <p>My goal is to finish in 3 days.</p>
-      ) : (
-        <p>My goal is not 3 days.</p>
-      )
-    }
-  </body>
-</html>
+<BaseHTML title="About Agnostic Tarot">
+  <p>
+    Agnostic tarot is for everyone. Tarot works, it is an effective tool for
+    creative thinking. There are many theories and superstitions about card
+    reading and how it works.
+  </p>
+  <p>
+    I believe that the randomness and the images and the colors trigger our
+    minds. There is no magic required. No gods, no angels, no rituals, no rules.
+    To be clear, these things can enhance the experience - but are not required.
+  </p>
+  <p>
+    There is no authority in tarot. There is the wisdom gained by those who have
+    gone before, and it holds great value. But as experience is gained, and
+    knowledge grows, cards will begin to hold their own nuanced meanings for
+    you.
+  </p>
+  <p>
+    I have spent over 30 years studying tarot and the mysterious side of life.
+    Some of my skills are listed below:
+  </p>
+</BaseHTML>

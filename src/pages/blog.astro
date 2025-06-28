@@ -1,34 +1,12 @@
 ---
 import "../styles/global.css"
-import Nav from "../components/Nav.astro"
-import Header from "../components/Header.astro"
-const pageTitle = "Agnostic Tarot Blog"
+import BaseHTML from "../layouts/BaseHTML.astro"
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link
-      rel="icon"
-      href="https://fav.farm/🔥"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width"
-    />
-    <meta
-      name="generator"
-      content={Astro.generator}
-    />
-    <title>{pageTitle}</title>
-  </head>
-  <body>
-    <Header />
-
-    <ul>
-      <li><a href="/posts/post-1">The Agnostic Method</a></li>
-      <li><a href="/posts/post-2">Learning the Cards</a></li>
-      <li><a href="/posts/post-3">Buying a Deck</a></li>
-    </ul>
-  </body>
-</html>
+<BaseHTML title="Agnostic Tarot Blog">
+  <ul>
+    <li><a href="/posts/post-1">The Agnostic Method</a></li>
+    <li><a href="/posts/post-2">Learning the Cards</a></li>
+    <li><a href="/posts/post-3">Buying a Deck</a></li>
+  </ul>
+</BaseHTML>
