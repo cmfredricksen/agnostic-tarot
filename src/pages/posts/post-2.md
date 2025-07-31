@@ -2,6 +2,7 @@
 title: 'Learning the Cards'
 path: '/posts/post-2'
 layout: '../../layouts/PostLayout.astro'
+author: 'Chris F'
 ---
 
 ## Learning the Cards

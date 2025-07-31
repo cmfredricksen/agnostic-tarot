@@ -2,9 +2,9 @@
 title: "Buying a Deck"
 path: "/posts/post-3"
 layout: "../../layouts/PostLayout.astro"
+author: "Chris F"
 ---
 
-## Buying a Deck
 
 Buying a deck seems pretty straight forward and simple until you go to do it. There is actually a lot to consider if you are getting a deck to practice with. If you are getting a deck for intuition or as a collector then you can just choose whichever one you like.
 
@@ -26,7 +26,11 @@ Even without the reversals, using the TdM keywords requires less than 1/2 of the
 
 For this course you will need a Tarot de Marseille deck. It should be a classic replica. It needs to be an actual tarot deck. What I mean is 78 cards comprised of 22 major arcana, 40 pip cards and 16 court cards. There are several decks for sale on Amazon or the publishers websites. Below are two recommendations:
 
+==Replace md links with html links to open in new window==
+
 [CBD Tarot](https://www.amazon.com/Cbd-Tarot-Marseille-Yoav-Ben-dov/dp/1572819049/ref=sr_1_1?sr=8-1)
+
+<a href="https://www.wikipedia.org" target="_blank">Test Link</a>
 
 [Marseille Tarot](https://www.amazon.com/Marseille-Tarot-Anna-Maria-Morsucci/dp/0738773069/ref=sr_1_8?s=books&sr=1-8)
 

@@ -1,8 +1,8 @@
 ---
 title: 'The Agnostic Method'
 pubDate: 2025-06-10
-description: 'This is the first post of my new Astro blog.'
-author: 'Astro Learner'
+description: 'Use the Agnostic Method to learn how to read cards, both tarot and playing cards.'
+author: 'Chris F'
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'The Astro logo on a dark background with a pink glow.'
@@ -11,7 +11,6 @@ path: "/posts/post-1"
 layout: "../../layouts/PostLayout.astro"
 ---
 
-## The Agnostic Method
 
 The agnostic method for card reading is a way to practice getting good at reading cards through repetition, not relying on anything deep or elaborate. The cards are a tool, a tool I love using, but a tool none the less. There is no need for rituals, cleansings, meditations, offerings, prayers or anything else.
 
