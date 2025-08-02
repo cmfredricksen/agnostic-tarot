@@ -17,22 +17,29 @@ const posts = Object.values(
 ---
 
 <BaseHTML title="Agnostic Tarot Blog">
-  <ul>
-    {
-      posts.map((post) => (
+  {
+    posts.map((post) => (
+      <div class="links">
         <a href={post.frontmatter.path}>{post.frontmatter.title}</a>
         <p>{post.frontmatter.description}</p>
-      ))
-    }
-  </ul>
+      </div>
+    ))
+  }
 </BaseHTML>
 
 <style>
-  ul {
+  .links {
     display: flex;
     flex-direction: column;
-  }
-  ul a {
     margin: 1rem 0;
+    background-color: lavenderblush;
+    padding: 1rem;
+    border-left: 1px solid paleturquoise;
+    border-right: 1px solid paleturquoise;
+    border: 1px solid paleturquoise;
+  }
+  a {
+    /* margin: 1rem 0; */
+    /* padding: 1.5rem; */
   }
 </style>
