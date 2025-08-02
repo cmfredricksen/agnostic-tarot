@@ -1,13 +1,13 @@
 ---
 title: 'The Agnostic Method'
 pubDate: 2025-06-10
-description: 'Use the Agnostic Method to learn how to read cards, both tarot and playing cards.'
+description: 'Use the Agnostic Method to learn how to read tarot cards.'
 author: 'Chris F'
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["astro", "blogging", "learning in public"]
-path: "/posts/post-1"
+path: "/posts/the-agnostic-method"
 layout: "../../layouts/PostLayout.astro"
 ---
 
@@ -16,7 +16,7 @@ The agnostic method for card reading is a way to practice getting good at readin
 
 What you need:
 
-1. A Tarot de Marseille deck  [[Buying a deck]]
+1. A Tarot de Marseille deck  [Buying a Deck](/posts/buying-a-deck)
 2. Paper and pen
 3. Keywords [[Keyword Chart]]
 

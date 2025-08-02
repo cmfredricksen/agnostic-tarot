@@ -22,3 +22,29 @@ h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
 }
+  table {
+    border-spacing: 1rem;
+    border: 2px solid green;
+  }
+
+  th {
+    background-color: lightgreen;
+    padding: 0 1rem;
+  }
+
+  tbody tr {
+    background-color: yellow;
+  }
+
+  td {
+    border: 2px solid green;;
+    padding: 0 1rem;
+  }
+
+  tr:first-child {
+    padding-right: 2rem;
+  }
+
+  sup {
+    font-weight: bold;
+  }

@@ -1,11 +1,11 @@
 ---
 title: 'Learning the Cards'
-path: '/posts/post-2'
+path: '/posts/learning-the-cards'
+description: 'Start with the basics: ranks, suits and deck structure.'
 layout: '../../layouts/PostLayout.astro'
 author: 'Chris F'
 ---
 
-## Learning the Cards
 
 The first step is learning the cards. I mean the tarot structure and it's meaning. A tarot deck is made up of 78 cards as follows:
 

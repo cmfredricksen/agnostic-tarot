@@ -1,6 +1,7 @@
 ---
 title: "Buying a Deck"
-path: "/posts/post-3"
+path: "/posts/buying-a-deck"
+description: 'Tips and recommendations for buying a Tarot de Marseille deck.'
 layout: "../../layouts/PostLayout.astro"
 author: "Chris F"
 ---
@@ -14,29 +15,30 @@ We are going to start with rote memorization - think abc's - as a jumping off po
 
 
 |           | RWS Keywords | RWS + Reversals | TdM Keywords |
-| --------- | ------------ | --------------- | ------------ |
+| --------- | :----------: | :-------------: | :----------: |
 | 40 pips   | 40           | 80              | 10           |
 | 16 courts | 16           | 32              | 4            |
 | 22 majors | 22           | 44              | 22           |
-| Totals    | ==88==       | 156             | ==36==       |
+| Totals    | **88**       | *156*             | **36**       |
 
 When you are getting started just skip on the reversals. You can begin to incorporate them later if you choose. They are not needed at all to read. I do not use them, or very rarely.
 
 Even without the reversals, using the TdM keywords requires less than 1/2 of the initial memorization. You will become comfortable with the cards quicker, and your own understanding will expand beyond the keywords. That is when the real fun begins, and the tarot becomes useful for every day problem solving. (_And More!_)
 
-For this course you will need a Tarot de Marseille deck. It should be a classic replica. It needs to be an actual tarot deck. What I mean is 78 cards comprised of 22 major arcana, 40 pip cards and 16 court cards. There are several decks for sale on Amazon or the publishers websites. Below are two recommendations:
+For this course you will need a Tarot de Marseille deck. Make sure you get an actual tarot deck.[^1] It should be a classic replica. Below are two recommendations you can order from the publisher's websites:
 
-==Replace md links with html links to open in new window==
 
-[CBD Tarot](https://www.amazon.com/Cbd-Tarot-Marseille-Yoav-Ben-dov/dp/1572819049/ref=sr_1_1?sr=8-1)
+<a href="https://www.usgamesinc.com/cbd-tarot-de-marseille.html" target="_blank">CBD Tarot</a>
 
-<a href="https://www.wikipedia.org" target="_blank">Test Link</a>
+<a href="https://www.llewellyn.com/product.php?ean=9780738773063" target="_blank">Tarot de Marseille</a>
 
-[Marseille Tarot](https://www.amazon.com/Marseille-Tarot-Anna-Maria-Morsucci/dp/0738773069/ref=sr_1_8?s=books&sr=1-8)
 
-Both links go to Amazon, but I am not affiliated. It is just the quickest and easiest way to get a deck. You can also buy from the publishers, and sometimes I do. At book stores I rarely find a Marseille deck, but you could get lucky. I will be using images from the CBD tarot in this course, mainly because they are free to use with the authors permission from his website.
 
 Get your deck, look it over, and enjoy the artwork. Shuffle it and get the feel for it. Then begin the practice!
 
 
-[1]:  What I mean is 78 cards comprised of 22 major arcana, 40 pip cards, and 16 court cards.
+[^1]:  What I mean is 78 cards comprised of 22 major arcana, 40 pip cards, and 16 court cards.
+
+<!-- A note[^1] -->
+
+<!-- [^1]: Big note. -->

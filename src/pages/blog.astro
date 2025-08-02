@@ -10,7 +10,7 @@ interface Frontmatter {
 }
 
 const posts = Object.values(
-  import.meta.glob<MarkdownInstance<Frontmatter>>("./posts/**/*.md", {
+  import.meta.glob<MarkdownInstance<Frontmatter>>("./posts/*.md", {
     eager: true,
   })
 )
@@ -21,6 +21,7 @@ const posts = Object.values(
     {
       posts.map((post) => (
         <a href={post.frontmatter.path}>{post.frontmatter.title}</a>
+        <p>{post.frontmatter.description}</p>
       ))
     }
   </ul>
