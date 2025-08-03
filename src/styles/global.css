@@ -69,4 +69,8 @@ p {
     .hidden {
       display: flex;
     }
+    body {
+      width: 60%;
+      padding: 1rem;
+    }
   }
