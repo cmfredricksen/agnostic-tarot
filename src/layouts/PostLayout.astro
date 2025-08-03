@@ -20,15 +20,12 @@ const tags = frontmatter.tags
     <h2>{frontmatter.title}</h2>
     <p>Written by {frontmatter.author}</p>
     <slot />
-    {tags.map((tag) => <p>{tag}</p>)}
   </article>
 </BaseHTML>
 
 <style>
   article {
-    /* width: 66%; */
     margin: 1rem auto;
-    /* font-family: "Courier New", Courier, monospace; */
     color: #000;
   }
 </style>
