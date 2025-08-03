@@ -1,6 +1,5 @@
 ---
 title: 'Keywords'
-pubDate: 2024-08-27
 description: 'Use the Agnostic Method to learn how to read tarot cards.'
 author: 'Chris F'
 tags: ["astro", "blogging", "learning in public"]

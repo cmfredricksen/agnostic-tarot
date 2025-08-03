@@ -4,6 +4,7 @@ path: "/posts/supplies"
 description: 'Everything you need to get started learning how to read the tarot.'
 layout: "../../layouts/PostLayout.astro"
 author: "Chris F"
+tags: []
 ---
 
 You just need a few things to get started with this class, so get your supplies and let's have some fun with the cards!

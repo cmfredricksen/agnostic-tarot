@@ -1,11 +1,7 @@
 ---
 title: 'The Agnostic Method'
-pubDate: 2025-06-10
 description: 'Use the Agnostic Method to learn how to read tarot cards.'
 author: 'Chris F'
-image:
-    url: 'https://docs.astro.build/assets/rose.webp'
-    alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["astro", "blogging", "learning in public"]
 path: "/posts/the-agnostic-method"
 layout: "../../layouts/PostLayout.astro"

@@ -4,6 +4,7 @@ path: "/posts/buying-a-deck"
 description: 'Tips and recommendations for buying a Tarot de Marseille deck.'
 layout: "../../layouts/PostLayout.astro"
 author: "Chris F"
+tags: ["getting-started", "supplies", "tarot-deck"]
 ---
 
 
@@ -16,10 +17,10 @@ We are going to start with rote memorization - think abc's - as a jumping off po
 
 |           | RWS Keywords | RWS + Reversals | TdM Keywords |
 | --------- | :----------: | :-------------: | :----------: |
-| 40 pips   | 40           | 80              | 10           |
-| 16 courts | 16           | 32              | 4            |
-| 22 majors | 22           | 44              | 22           |
-| Totals    | **88**       | *156*             | **36**       |
+| **40 pips**   | 40           | 80              | 10           |
+| **16 courts** | 16           | 32              | 4            |
+| **22 majors** | 22           | 44              | 22           |
+| **Totals**    | *88*       | *156*             | **36**       |
 
 When you are getting started just skip on the reversals. You can begin to incorporate them later if you choose. They are not needed at all to read. I do not use them, or very rarely.
 
@@ -37,8 +38,4 @@ For this course you will need a Tarot de Marseille deck. Make sure you get an ac
 Get your deck, look it over, and enjoy the artwork. Shuffle it and get the feel for it. Then begin the practice!
 
 
-[^1]:  What I mean is 78 cards comprised of 22 major arcana, 40 pip cards, and 16 court cards.
-
-<!-- A note[^1] -->
-
-<!-- [^1]: Big note. -->
+[^1]: See more about deck structure with examples here: [Learning the Cards](/posts/learning-the-cards)

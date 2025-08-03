@@ -4,6 +4,7 @@ path: '/posts/learning-the-cards'
 description: 'Start with the basics: ranks, suits and deck structure.'
 layout: '../../layouts/PostLayout.astro'
 author: 'Chris F'
+tags: ["deck-structure", "tdm"]
 ---
 
 
@@ -56,9 +57,8 @@ The other characteristics of the cards will be used to expand the meanings as de
 
 ### Why Keywords?
 
-The reason we are focusing on keywords, is that they are enough to get started. Once we start, then it is easier to continue. But coming in blank is much more challenging. It is like a blank page, harder to overcome than paragraphs of gibberish. You need something to work with, and the keyword is that.
+The reason we are focusing on keywords, is that they are enough to get started. Once we start, then it is easier to continue. Reading as a beginner can be overwhelming and challenging. Using keywords is just a way to start, to move forward and get practice. You need something to work with, and the keyword is that. As you become familiar with the cards through practice, the meanings will grow and expand for you. 
 
-Also once you have the core ideas memorized, then you can apply that basic knowledge to any deck you come across. 
+Once you have the core ideas memorized, you can begin to study the cards more in depth. Added Bonus: you can apply that basic knowledge to any deck you come across. Tarot or playing cards.
 
-Most importantly this method allows you to handle the cards, to 
 

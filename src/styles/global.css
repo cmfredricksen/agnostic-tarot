@@ -24,24 +24,25 @@ h1 {
 }
 
 p {
-  margin: 1rem;
+  margin: 1rem 0;
 }
   table {
     border-spacing: 1rem;
-    border: 2px solid green;
+    /* border: 2px solid green; */
+    background-color: lavenderblush;
   }
 
   th {
-    background-color: lightgreen;
+    background-color: paleturquoise;
     padding: 0 1rem;
   }
 
   tbody tr {
-    background-color: yellow;
+    background-color: lavenderblush;
   }
 
   td {
-    border: 2px solid green;;
+    /* border: 2px solid green;; */
     padding: 0 1rem;
   }
 
