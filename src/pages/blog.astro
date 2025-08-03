@@ -11,7 +11,7 @@ interface Frontmatter {
 }
 
 const posts = Object.values(
-  import.meta.glob<MarkdownInstance<Frontmatter>>("./posts/*.md", {
+  import.meta.glob<MarkdownInstance<Frontmatter>>("./posts/*.mdx", {
     eager: true,
   })
 )
