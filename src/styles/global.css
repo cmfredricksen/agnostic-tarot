@@ -2,6 +2,7 @@
 
 html {
   background-color: #f1f5f9;
+  background-color: lavender;
   font-family: "Inconsolata";
 }
 
@@ -27,28 +28,25 @@ p {
   margin: 1rem 0;
 }
   table {
-    border-spacing: 1rem;
-    /* border: 2px solid green; */
-    background-color: lavenderblush;
+    border-collapse: collapse;
+    border: 2px solid green;
+    background-color: linen;
+    width: 70%;
+    margin: 1rem 0;
   }
 
   th {
-    background-color: paleturquoise;
-    padding: 0 1rem;
+    /* background-color: paleturquoise; */
+    padding:  1rem;
+    border: 2px solid green;
   }
 
-  tbody tr {
-    background-color: lavenderblush;
-  }
 
   td {
-    /* border: 2px solid green;; */
-    padding: 0 1rem;
+    border: 2px solid green;;
+    padding:  1rem;
   }
 
-  tr:first-child {
-    padding-right: 2rem;
-  }
 
   sup {
     font-weight: bold;

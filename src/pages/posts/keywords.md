@@ -6,6 +6,26 @@ tags: ["astro", "blogging", "learning in public"]
 path: "/posts/keywords"
 layout: "../../layouts/PostLayout.astro"
 ---
+## Pips
+
+| Rank    | Keyword    | Notes                              |
+| ------- | ---------- | ---------------------------------- |
+| Aces    | New        |                                    |
+| Twos    | Choice     |                                    |
+| Threes  | Work       |                                    |
+| Fours   | Stable     |                                    |
+| Fives   | Change     |                                    |
+| Sixes   | Overcome   |                                    |
+| Sevens  | Experience | Knowledge from varied experiences  |
+| Eights  | Forward    | Momentum |
+| Nines   | Attain     | Achieve goal, get the prize        |
+| Tens    | Finish     | It is already over                 |
+| Pages   | Seek       | Planning and preparing            |
+| Knights | Action     |                                    |
+| Queens  | Patience   |                                    |
+| Kings   | Knowledge  |                                    |
+
+
 ## Major Arcana
 
 
@@ -34,22 +54,8 @@ layout: "../../layouts/PostLayout.astro"
 | 20  | Judgement      | Calling / Attraction   |
 | 21  | The World      | Completion of Cycle    |
 
-| Rank    | Keyword    | Notes                              |
-| ------- | ---------- | ---------------------------------- |
-| Aces    | New        |                                    |
-| Twos    | Choice     |                                    |
-| Threes  | Work       |                                    |
-| Fours   | Stable     |                                    |
-| Fives   | Change     |                                    |
-| Sixes   | Overcome   |                                    |
-| Sevens  | Experience | Knowledge from varied experiences  |
-| Eights  | Forward    | Momentum |
-| Nines   | Attain     | Achieve goal, get the prize        |
-| Tens    | Finish     | It is already over                 |
-| Pages   | Seek       | Planning and preparing            |
-| Knights | Action     |                                    |
-| Queens  | Patience   |                                    |
-| Kings   | Knowledge  |                                    |
+
+## Suits
 
 | Suit             | Meaning              |
 | ---------------- | -------------------- |

@@ -8,13 +8,11 @@ layout: "../../layouts/PostLayout.astro"
 ---
 
 
-The agnostic method for card reading is a way to practice getting good at reading cards through repetition, not relying on anything deep or elaborate. The cards are a tool, a tool I love using, but a tool none the less. There is no need for rituals, cleansings, meditations, offerings, prayers or anything else.
-
-What you need:
+The agnostic method for card reading is a way to practice getting good at reading cards through repetition, not relying on anything deep or elaborate. What you need:
 
 1. A Tarot de Marseille deck  [Buying a Deck](/posts/buying-a-deck)
 2. Paper and pen
-3. Keywords [[Keyword Chart]]
+3. Keywords [Keyword Chart](/posts/keywords)
 
 To get started you can use my keywords, but as you go you will start having your own ideas of the meanings of the cards. You will also learn more about the meanings of the cards from other sources. You should make your own keyword list, and just fill it in as new insights come to you. 
 

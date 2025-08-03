@@ -21,6 +21,7 @@ const posts = Object.values(
   {
     posts.map((post) => (
       <div class="links">
+        <p class="lily">&#9884</p>
         <a href={post.frontmatter.path}>{post.frontmatter.title}</a>
         <p>{post.frontmatter.description}</p>
       </div>
@@ -35,9 +36,6 @@ const posts = Object.values(
     margin: 1rem 0;
     background-color: lavenderblush;
     padding: 1rem;
-    border-left: 1px solid paleturquoise;
-    border-right: 1px solid paleturquoise;
-    border: 1px solid paleturquoise;
   }
   a {
     /* margin: 1rem 0; */
