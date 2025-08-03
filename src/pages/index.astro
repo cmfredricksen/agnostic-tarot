@@ -10,18 +10,17 @@ import threeCoins from "../images/cbd_tarot/d03.jpg"
 
 <BaseHTML title="Agnostic Tarot">
   <div class="hero">
-    <div class="img-box">
-      <Image
-        src={temperance}
-        alt="Temperance XIV by CBD Tarot"
-        title="Temperance shows that time heals all wounds."
-      />
-      <Image
-        src={threeCoins}
-        alt="Three of Coins by CBD Tarot"
-        title="Three of coins signifies work"
-      />
-    </div>
+    <Image
+      src={temperance}
+      alt="Temperance XIV by CBD Tarot"
+      title="Temperance shows that time heals all wounds."
+    />
+    <Image
+      src={threeCoins}
+      alt="Three of Coins by CBD Tarot"
+      title="Three of coins signifies work"
+      class="hidden"
+    />
     <div class="contents">
       <h2>Start Here:</h2>
       <ul>
@@ -38,25 +37,20 @@ import threeCoins from "../images/cbd_tarot/d03.jpg"
   .hero {
     display: flex;
     align-items: flex-start;
-    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    justify-content: space-around;
     /* border: 1px solid purple; */
     background-color: #fff0f5;
     padding: 2rem;
     border-left: 1px solid paleturquoise;
     border-right: 1px solid paleturquoise;
   }
-  .img-box {
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    /* border: 1px solid orange; */
-    /* padding: 2rem; */
-  }
   .contents {
     /* text-align: left; */
     /* border: 1px solid blue; */
     padding: 0 3rem;
   }
+
   li {
     margin: 1rem 0;
     list-style: none;
@@ -70,4 +64,14 @@ import threeCoins from "../images/cbd_tarot/d03.jpg"
     font-weight: 600;
     margin-left: -3em; /* Adjusts positioning */
   }
+
+  /* .hidden {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    .hidden {
+      display: flex;
+    }
+  } */
 </style>

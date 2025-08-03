@@ -8,10 +8,10 @@ html {
 
 body {
   margin: 0 auto;
-  width: 100%;
+  width: 94%;
   /* max-width: 80ch; */
-  width: 66%;
-  padding: 1rem;
+  /* width: 66%; */
+  /* padding: 1rem; */
   line-height: 1.5;
 }
 
@@ -35,6 +35,10 @@ p {
     margin: 1rem 0;
   }
 
+  img {
+    max-width: 100%;
+  }
+
   th {
     /* background-color: paleturquoise; */
     padding:  1rem;
@@ -50,4 +54,19 @@ p {
 
   sup {
     font-weight: bold;
+  }
+
+
+  .hidden {
+    display: none;
+  }
+
+  .spread {
+    display: flex;
+  }
+
+  @media screen and (min-width: 768px) {
+    .hidden {
+      display: flex;
+    }
   }

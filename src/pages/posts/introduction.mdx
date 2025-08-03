@@ -8,16 +8,24 @@ tags: ["getting-started", "tdm"]
 date: 2025-08-03
 ---
 
+import { Image } from "astro:assets"
+import theFool from "../../images/cbd_tarot/a22.jpg"
+import twoCoins from "../../images/cbd_tarot/d02.jpg"
+import twoSwords from "../../images/cbd_tarot/e02.jpg"
+import knightSwords from "../../images/cbd_tarot/e12.jpg"
+import sixCups from "../../images/cbd_tarot/c06.jpg"
+import sixBatons from "../../images/cbd_tarot/b06.jpg"
 
 This course is for anyone who is interested in reading tarot cards, or even just playing with them. The tarot is a valuable tool for thinking, brainstorming, inspiration and insight. It can also be a method, a meditation or a ritual.
 
 Learning how to read the cards takes time and practice. There are several different methods and schools of thought when it comes to tarot. With agnostic tarot we are starting at the most basic element, numbers or ranks.
 
-<div>
+<div class="spread">
 
-![The Fool](../../images/cbd_tarot/a22.jpg)
-![Two of Coins](../../images/cbd_tarot/d02.jpg)
-![Two of Swords](../../images/cbd_tarot/e02.jpg)
+<img src={theFool.src} alt="The Fool" />
+<img src={twoCoins.src} alt="Two of Coins" class="hidden" />
+<img src={twoSwords.src} alt="Two of Swords" class="hidden" />
+
 </div>
 
 What I have done is assigned a keyword, one word to each rank. This is the starting point for reading. The word is not negative or positive - just a neutral word. These words are based on numerology.
@@ -26,11 +34,12 @@ Once you have your keyword, there are different ways you can expand your story. 
 
 Also, the meanings I use for the tarot are all down to earth, real life examples. I have purposely avoided religious, spiritual, new age or psychology associations. In this guide, tarot is a tool for day to day life. There is no magic, there is no power, there is no ritual, and no spirits either. This is about getting real life, hands on experience with the cards. In time the meanings of the cards will grow to resonate with you.
 
-<div>
+<div class="spread">
 
-![Knight of Swords](../../images/cbd_tarot/e12.jpg)
-![Six of Cups](../../images/cbd_tarot/c06.jpg)
-![Six of Wands](../../images/cbd_tarot/b06.jpg)
+<img src={knightSwords.src} alt="Knight of Swords" />
+<img src={sixCups.src} alt="Six of Cups" class="hidden" />
+<img src={sixBatons.src} alt="Six of Batons" class="hidden"/>
+
 </div>
 
 I think it is a barrier, at least for beginners, to attach a bunch of mystical, magical, religious and psychological meanings to the cards.  It makes an obstacle for the reader. It adds mental and emotional noise that isn't helpful. And you don't need any of those things to use the tarot to good effect.
