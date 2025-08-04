@@ -1,76 +1,116 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 
 html {
-  background-color: #f1f5f9;
   background-color: lavender;
   font-family: "Inconsolata";
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   margin: 0 auto;
   width: 94%;
-  /* max-width: 80ch; */
-  /* width: 66%; */
-  /* padding: 1rem; */
+  padding: 1rem;
   line-height: 1.5;
 }
 
-* {
-  box-sizing: border-box;
+h1 {
+  font-size: 2.5rem;
+  color: darkblue;
 }
 
-h1 {
-  margin: 1rem 0;
-  font-size: 2.5rem;
+a {
+  text-decoration: none;
+  color: darkblue;
+}
+
+a:hover {
+  color: darkmagenta;
 }
 
 p {
   margin: 1rem 0;
 }
-  table {
+
+li {
+    margin: 1rem 0;
+    list-style: none;
+    color: green;
+  }
+  
+li::before {
+    content: "\269c"; /* Inserts a Unicode bullet character */
+    color: darkblue;
+    display: inline-block;
+    width: 3em;
+    font-weight: 600;
+    margin-left: -3em;
+  }
+  
+img {
+    max-width: 100%;
+  }
+  
+table {
     border-collapse: collapse;
-    border: 2px solid green;
-    background-color: linen;
+    border: 2px solid darkblue;
+    /* background-color: linen; */
     width: 70%;
     margin: 1rem 0;
   }
 
-  img {
-    max-width: 100%;
-  }
-
-  th {
+th {
     /* background-color: paleturquoise; */
     padding:  1rem;
     border: 2px solid green;
   }
 
-
-  td {
+td {
     border: 2px solid green;;
     padding:  1rem;
   }
 
-
-  sup {
+sup {
     font-weight: bold;
   }
 
+.hero {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #fff0f5;
+    padding: 2rem;
+    border-left: 1px solid paleturquoise;
+    border-right: 1px solid paleturquoise;
+  }
+  
+.contents {
+    padding: 3rem;
+  }
 
-  .hidden {
+.hidden {
     display: none;
   }
 
-  .spread {
+.spread {
     display: flex;
   }
 
-  @media screen and (min-width: 768px) {
-    .hidden {
-      display: flex;
-    }
+@media screen and (min-width: 768px) {
     body {
       width: 60%;
       padding: 1rem;
+    }
+    .hero {
+      justify-content: space-around;
+    }
+    .hidden {
+      display: flex;
+      margin-left: 1rem;
     }
   }

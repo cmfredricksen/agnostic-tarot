@@ -9,6 +9,7 @@ type Props = MarkdownLayoutProps<{
   author: string
   date: string
   tags: [string]
+  description: string
 }>
 
 const { frontmatter } = Astro.props
@@ -17,8 +18,11 @@ const tags = frontmatter.tags
 
 <BaseHTML title={frontmatter.title}>
   <article>
-    <h2>{frontmatter.title}</h2>
-    <p>Written by {frontmatter.author}</p>
+    <div class="hero">
+      <h2>{frontmatter.title}</h2>
+      <!-- <p>Written by {frontmatter.author}</p> -->
+      <p>{frontmatter.description}</p>
+    </div>
     <slot />
   </article>
 </BaseHTML>
@@ -27,5 +31,8 @@ const tags = frontmatter.tags
   article {
     margin: 1rem auto;
     color: #000;
+  }
+  .hero {
+    flex-direction: column;
   }
 </style>
