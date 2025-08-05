@@ -46,7 +46,7 @@ li::before {
     content: "\269c"; /* Inserts a Unicode bullet character */
     color: darkblue;
     display: inline-block;
-    width: 3em;
+    width: 2em;
     font-weight: 600;
     margin-left: -3em;
   }
@@ -100,6 +100,11 @@ sup {
 .spread {
     display: flex;
   }
+
+.content-list {
+  /* background-color:chartreuse; */
+  padding-left: 3rem;
+}
 
 @media screen and (min-width: 768px) {
     body {
