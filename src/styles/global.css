@@ -51,6 +51,11 @@ li::before {
     margin-left: -3em;
   }
   
+  /* modify margin on li::before element */
+.rt-margin {
+  margin-left: 3.5rem;
+}
+  
 img {
     max-width: 100%;
   }
