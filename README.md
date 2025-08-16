@@ -1,47 +1,15 @@
-# Astro Starter Kit: Minimal
+# Welcome to Agnostic Tarot
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Agnostic Tarot is the tarot learning and reading system created by C.M. Fredricksen. It is an approach that avoids religious/spiritual/psychological meanings in the cards, for beginners.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+First learn the skill of reading the cards, then deepen your understanding of the cards. There are a lot of potential paths you can choose to follow in gaining knowledge.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Agnostic Tarot is meant to be:
 
-## 🚀 Project Structure
+FUN
+Easy to get Started
+Unlimited growth potential
+Interesting
+Empowering for regular people
+Validating for intuition
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
