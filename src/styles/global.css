@@ -83,12 +83,16 @@ sup {
     font-weight: bold;
   }
 
+hr {
+  border: 1px solid green;
+}
+
 .hero {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #fff0f5;
+    background-color: lavenderblush;
     padding: 2rem;
     border-left: 1px solid paleturquoise;
     border-right: 1px solid paleturquoise;
