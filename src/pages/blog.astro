@@ -24,6 +24,13 @@ const posts = Object.values(
         <p class="lily">&#9884</p>
         <a href={post.frontmatter.path}>{post.frontmatter.title}</a>
         <p>{post.frontmatter.description}</p>
+        <div class="tags">
+          {post.frontmatter.tags.map((tag) => (
+            <a href={`/tags/${tag}`}>
+              <small>#{tag}</small>
+            </a>
+          ))}
+        </div>
       </div>
     ))
   }
@@ -36,6 +43,9 @@ const posts = Object.values(
     margin: 1rem 0;
     background-color: lavenderblush;
     padding: 1rem;
+  }
+  .tags small {
+    margin-right: 1rem;
   }
   a {
     /* margin: 1rem 0; */
