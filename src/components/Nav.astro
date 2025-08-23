@@ -12,6 +12,10 @@ const links = [
     title: "blog",
     path: "/blog",
   },
+  {
+    title: "tags",
+    path: "/tags",
+  },
 ]
 ---
 
@@ -32,5 +36,11 @@ const links = [
   }
   nav a:hover {
     color: darkmagenta;
+  }
+  @media screen and (max-width: 768px) {
+    nav a {
+      margin: 0;
+      padding: 1rem 1rem;
+    }
   }
 </style>
