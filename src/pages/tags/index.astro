@@ -1,5 +1,8 @@
 ---
 import BaseHTML from "../../layouts/BaseHTML.astro"
+
+import { Image } from "astro:assets"
+import theJuggler from "../../images/cbd_tarot/a01.jpg"
 const allPosts = Object.values(
   import.meta.glob("../posts/*.mdx", { eager: true })
 )
@@ -9,14 +12,39 @@ const tags = [
 ---
 
 <BaseHTML title="Tag Index">
-  <h2>Tags</h2>
-  <div class="tags">
-    {
-      tags.map((tag) => (
-        <p>
-          <a href={`/tags/${tag}`}>#{tag}</a>
-        </p>
-      ))
-    }
-  </div>
+  <section class="hero">
+    <div class="tags">
+      <h2>Tags</h2>
+      {
+        tags.map((tag) => (
+          <p>
+            <a href={`/tags/${tag}`}>#{tag}</a>
+          </p>
+        ))
+      }
+    </div>
+    <div class="card-container">
+      <Image
+        src={theJuggler}
+        alt="The Juggler: 1"
+      />
+      <h3>The Juggler</h3>
+      <p>
+        The Juggler brings their skills to the table, these include natural
+        gifts and expertise. They know more than you would think and can be very
+        cunning. They are always moving forward and don't dwell on the past.
+      </p>
+    </div>
+  </section>
 </BaseHTML>
+
+<style>
+  section {
+    display: flex;
+  }
+  .tags {
+    /* display: flex; */
+    width: 40%;
+    background: lightcyan;
+  }
+</style>
