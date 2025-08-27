@@ -29,7 +29,7 @@ const tags = [
         alt="The Juggler: 1"
       />
       <h3>The Juggler</h3>
-      <p>
+      <p class="bg-color">
         The Juggler brings their skills to the table, these include natural
         gifts and expertise. They know more than you would think and can be very
         cunning. They are always moving forward and don't dwell on the past.
@@ -44,7 +44,39 @@ const tags = [
   }
   .tags {
     /* display: flex; */
-    width: 40%;
-    background: lightcyan;
+    /* width: 40%; */
+    background: paleturquoise;
+    padding: 1rem;
+  }
+  a {
+    /* border: 2px solid lavenderblush; */
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 1rem;
+    /* box-shadow: 1px 2px 2px; */
+  }
+
+  .bg-color {
+    background-color: paleturquoise;
+    color: darkblue;
+    padding: 1rem 0.5rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    section {
+      flex-direction: column;
+      align-items: center;
+      width: 95%;
+    }
+    .tags {
+      width: 100%;
+      margin: 1rem auto;
+    }
+    a {
+      border: none;
+      box-shadow: none;
+      padding: 0;
+      width: 100%;
+    }
   }
 </style>
