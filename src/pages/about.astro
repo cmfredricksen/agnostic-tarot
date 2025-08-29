@@ -1,6 +1,12 @@
 ---
 import "../styles/global.css"
 import BaseHTML from "../layouts/BaseHTML.astro"
+import { Image } from "astro:assets"
+import theFool from "../images/cbd_tarot/a22.jpg"
+import papesse from "../images/cbd_tarot/a02.jpg"
+import fortitude from "../images/cbd_tarot/a11.jpg"
+import theTower from "../images/cbd_tarot/a16.jpg"
+import theWorld from "../images/cbd_tarot/a21.jpg"
 ---
 
 <BaseHTML title="About Agnostic Tarot">
@@ -9,6 +15,31 @@ import BaseHTML from "../layouts/BaseHTML.astro"
       Agnostic tarot is for everyone. There are no barriers to entry. You just
       need a deck and some guidance to get started.
     </p>
+    <Image
+      src={theFool}
+      alt="The Fool"
+      title="The Fool"
+    />
+    <Image
+      src={papesse}
+      alt="Papesse"
+      title="Papesse"
+    />
+    <Image
+      src={fortitude}
+      alt="Fortitude"
+      title="Fortitude"
+    />
+    <Image
+      src={theTower}
+      alt="The House God"
+      title="The House God"
+    />
+    <Image
+      src={theWorld}
+      alt="The World"
+      title="The World"
+    />
     <p>
       There is no magic required. You don't have to be gifted your first deck,
       or burn incense to cleanse your deck, or believe and practice any of the
@@ -46,3 +77,11 @@ import BaseHTML from "../layouts/BaseHTML.astro"
     </p>
   </section>
 </BaseHTML>
+
+<style>
+  img {
+    object-fit: contain;
+    width: 114px;
+    height: 228px;
+  }
+</style>
