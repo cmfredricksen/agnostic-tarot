@@ -130,6 +130,14 @@ hr {
   border: 1px solid lightcyan;
 }
 
+.emphasis {
+  font-style: italic;
+  /* font-size: 1.2rem; */
+  /* color: darkmagenta; */
+  background-color: paleturquoise;
+  /* padding: 0 1rem; */
+}
+
 
 @media screen and (min-width: 768px) {
     body {
