@@ -27,6 +27,7 @@ h1 {
 a {
   text-decoration: none;
   color: darkblue;
+  /* border: 2px solid purple; */
 }
 
 a:hover {
@@ -38,9 +39,11 @@ p {
 }
 
 li {
-    margin: 1rem 0;
+    /* margin: 1rem 0; */
     list-style: none;
     color: green;
+    padding-bottom: 1rem;
+    /* border: 2px solid red; */
   }
   
 li::before {
@@ -49,12 +52,15 @@ li::before {
     display: inline-block;
     width: 2em;
     font-weight: 600;
-    margin-left: -3em;
+    margin-left: -2em;
+    /* margin: 0; */
+    /* border: 2px solid orange; */
   }
   
   /* modify margin on li::before element */
 .rt-margin {
   margin-left: 3.5rem;
+  /* border: 2px solid brown; */
 }
   
 img {
