@@ -23,7 +23,9 @@ const tags = frontmatter.tags
       <!-- <p>Written by {frontmatter.author}</p> -->
       <p>{frontmatter.description}</p>
     </div>
-    <slot />
+    <div class="text">
+      <slot />
+    </div>
   </article>
 </BaseHTML>
 
@@ -34,5 +36,14 @@ const tags = frontmatter.tags
   }
   .hero {
     flex-direction: column;
+  }
+  .text {
+    margin: 0 1rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .text {
+      margin: 0;
+    }
   }
 </style>

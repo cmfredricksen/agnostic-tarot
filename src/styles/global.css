@@ -27,6 +27,7 @@ h1 {
 a {
   text-decoration: none;
   color: darkblue;
+  
   /* border: 2px solid purple; */
 }
 
@@ -35,6 +36,21 @@ a:hover {
 }
 
 p {
+  margin: 1rem 0;
+}
+
+p {
+  a {
+    font-size: 1.25rem;
+    background-color: burlywood;
+    color: darkred;
+  }
+  a:hover {
+    color: lightgoldenrodyellow;
+  }
+}
+
+ul, ol {
   margin: 1rem 0;
 }
 
