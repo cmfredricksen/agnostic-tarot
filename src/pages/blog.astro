@@ -18,33 +18,43 @@ const posts = Object.values(
 ---
 
 <BaseHTML title="Agnostic Tarot Blog">
-  {
-    posts.map((post) => (
-      <div class="links">
-        <p class="lily">&#9884</p>
-        <a href={post.frontmatter.path}>{post.frontmatter.title}</a>
-        <p>{post.frontmatter.description}</p>
-        <div class="tags">
-          {post.frontmatter.tags.map((tag) => (
-            <a href={`/tags/${tag}`}>
-              <small>#{tag}</small>
-            </a>
-          ))}
+  <div class="link-container">
+    {
+      posts.map((post) => (
+        <div class="links">
+          {/* <p class="lily">&#9884</p> */}
+          <a href={post.frontmatter.path}>{post.frontmatter.title}</a>
+          <p>{post.frontmatter.description}</p>
+          <div class="tags">
+            {post.frontmatter.tags.map((tag) => (
+              <a href={`/tags/${tag}`}>
+                <small>#{tag}</small>
+              </a>
+            ))}
+          </div>
         </div>
-      </div>
-    ))
-  }
+      ))
+    }
+  </div>
 </BaseHTML>
 
 <style>
+  .link-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+  }
   .links {
     display: flex;
     flex-direction: column;
-    margin: 1rem 0;
+    margin: 1rem;
     background-color: lavenderblush;
     /* border: 2px solid turquoise; */
     border-radius: 5px;
     padding: 1rem;
+    width: 40%;
+    /* flex-wrap: wrap; */
   }
   .tags small {
     margin-right: 1rem;
@@ -52,5 +62,11 @@ const posts = Object.values(
   a {
     /* margin: 1rem 0; */
     /* padding: 1.5rem; */
+  }
+
+  @media screen and (max-width: 768px) {
+    .links {
+      width: 100%;
+    }
   }
 </style>
