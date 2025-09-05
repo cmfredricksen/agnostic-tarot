@@ -9,19 +9,23 @@ const allPosts = Object.values(
 const tags = [
   ...new Set(allPosts.map((post: any) => post.frontmatter.tags).flat()),
 ]
+
+const sortedTags = tags.sort()
 ---
 
 <BaseHTML title="Tag Index">
   <section class="hero">
     <div class="tags">
       <h2>Tags</h2>
-      {
-        tags.map((tag) => (
-          <p>
-            <a href={`/tags/${tag}`}>#{tag}</a>
-          </p>
-        ))
-      }
+      <div class="tag-box">
+        {
+          sortedTags.map((tag) => (
+            <p>
+              <a href={`/tags/${tag}`}>#{tag}</a>
+            </p>
+          ))
+        }
+      </div>
     </div>
     <div class="card-container">
       <Image
@@ -41,25 +45,27 @@ const tags = [
 <style>
   section {
     display: flex;
+    flex-direction: column;
   }
-  .tags {
-    /* display: flex; */
-    /* width: 40%; */
-    background: paleturquoise;
-    /* padding: 1rem; */
+  .tag-box {
+    display: flex;
+    flex-wrap: wrap;
   }
-  a {
-    /* border: 2px solid lavenderblush; */
-    /* padding: 1rem; */
-    margin: 1.5rem 0;
-    /* border-radius: 1rem; */
-    /* box-shadow: 1px 2px 2px; */
+  p {
+    background-color: none;
+    a {
+      background-color: lavender;
+      color: darkblue;
+      margin: 0.5rem 1rem;
+    }
+    a:hover {
+      color: darkmagenta;
+    }
   }
 
-  .bg-color {
-    background-color: paleturquoise;
-    color: darkblue;
-    /* padding: 1rem 0.5rem; */
+  .card-container {
+    padding: 1rem 2rem;
+    background-color: lavender;
   }
 
   @media screen and (max-width: 768px) {
