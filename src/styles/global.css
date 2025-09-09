@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 
+/* Global CSS written for mobile first : Mobile & Tablet Size */
+
 html {
   background-color: lavender;
   font-family: "Inconsolata";
@@ -13,15 +15,17 @@ html {
 
 body {
   margin: 0 auto;
-  /* width: 94%; */
   padding: 1rem;
   line-height: 1.5;
-  /* border: 3px solid green; */
 }
 
 h1 {
   font-size: 2.5rem;
   color: darkblue;
+}
+
+p {
+  margin: 1rem 0;
 }
 
 a {
@@ -33,10 +37,6 @@ a {
 
 a:hover {
   color: darkmagenta;
-}
-
-p {
-  margin: 1rem 0;
 }
 
 p {
@@ -55,11 +55,9 @@ ul, ol {
 }
 
 li {
-    /* margin: 1rem 0; */
     list-style: none;
     color: green;
     padding-bottom: 1rem;
-    /* border: 2px solid red; */
   }
   
 li::before {
@@ -69,52 +67,41 @@ li::before {
     width: 2em;
     font-weight: 600;
     margin-left: -2em;
-    /* margin: 0; */
-    /* border: 2px solid orange; */
   }
   
-  /* modify margin on li::before element */
-.rt-margin {
-  margin-left: 3.5rem;
-  /* border: 2px solid brown; */
-}
   
-img {
-    max-width: 100%;
-  }
-  
-table {
+  table {
     border-collapse: collapse;
     border: 2px solid darkblue;
-    /* background-color: linen; */
     width: 70%;
     margin: 1rem 0;
   }
-
-th {
+  
+  th {
     /* background-color: paleturquoise; */
     padding:  1rem;
     border: 2px solid green;
   }
-
-td {
+  
+  td {
     border: 2px solid green;;
     padding:  1rem;
   }
-
-sup {
+  
+  sup {
     font-weight: bold;
   }
-
-hr {
-  border: 1px solid green;
-}
-
-.main {
-  width: 100%;
-}
-
-.hero {
+  
+  hr {
+    border: 1px solid green;
+  }
+  
+  /* Class Sections */
+  .main {
+    width: 100%;
+  }
+  
+  .hero {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -125,18 +112,37 @@ hr {
     border-right: 1px solid paleturquoise;
   }
   
-.contents {
+  .contents {
     padding: 3rem;
   }
-
-.hidden {
+  
+  .rt-margin {
+    margin-left: 3.5rem;
+  }
+  .hidden {
     display: none;
   }
-
+  
 .spread {
     display: flex;
     padding: 2rem 0 0;
   }
+
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 90%; */
+  background-color: paleturquoise;
+  /* border: 2px solid green; */
+  align-items: center;
+  justify-content: center;
+  
+
+  img {
+    justify-content: space-evenly;
+    margin: .5rem;
+  }
+}
 
 .content-list {
   /* background-color:chartreuse; */
@@ -149,7 +155,18 @@ hr {
   justify-content: space-around;
   background-color: lavenderblush;
   width: 60%;
-  border: 1px solid lightcyan;
+  border: 1px solid paleturquoise;
+}
+
+.info-card {
+  /* background-color: paleturquoise; */
+  img {
+    width: 75px;
+  }
+}
+
+.info-text {
+  background-color: paleturquoise;
 }
 
 .emphasis {
@@ -160,17 +177,38 @@ hr {
   /* padding: 0 1rem; */
 }
 
-
+/* Computer Screen Size */
 @media screen and (min-width: 768px) {
     body {
       width: 60%;
-      padding: 1rem;
-    }
-    .hero {
-      justify-content: space-around;
     }
     .hidden {
       display: flex;
       margin-left: 1rem;
+    }
+    .card-row {
+      justify-content: space-around;
+      flex-wrap: wrap;
+      background-color: paleturquoise;
+      padding: 1rem 2rem;
+    }
+    .info-card {
+      display: flex;
+      width: 60%;
+      /* border: 2px solid deeppink; */
+      margin: 1rem 2rem;
+      padding: .5rem;
+      background-color: paleturquoise;
+      
+      img {
+        width: 114px;;
+        height: 228px;
+        align-self: center;
+      }
+    }
+    .info-text {
+      justify-content: center;
+      /* border: 2px solid deepskyblue; */
+      padding:  1rem;
     }
   }
