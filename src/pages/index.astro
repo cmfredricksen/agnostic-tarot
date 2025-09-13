@@ -6,6 +6,7 @@ import BookReading from "../components/BookReading.astro"
 
 import temperance from "../images/cbd_tarot/a14.jpg"
 import threeCoins from "../images/cbd_tarot/d03.jpg"
+import papesse from "../images/cbd_tarot/a02.jpg"
 ---
 
 <BaseHTML title="Agnostic Tarot">
@@ -15,6 +16,12 @@ import threeCoins from "../images/cbd_tarot/d03.jpg"
         src={temperance}
         alt="Temperance XIV by CBD Tarot"
         title="Temperance shows that time heals all wounds."
+        class="hidden"
+      />
+      <Image
+        src={papesse}
+        alt="Papesse"
+        title="Papesse, She is a reader."
       />
       <Image
         src={threeCoins}
@@ -22,15 +29,15 @@ import threeCoins from "../images/cbd_tarot/d03.jpg"
         title="Three of coins signifies work"
         class="hidden"
       />
-    </div>
 
-    <div class="contents">
-      <h2>Start Here:</h2>
-      <ul>
-        <li><a href="/posts/introduction">Introduction</a></li>
-        <li><a href="/posts/supplies">Tools of the Trade</a></li>
-        <li><a href="/posts/learning-the-cards">Learning the Cards</a></li>
-      </ul>
+      <div class="contents">
+        <h2>Start Here:</h2>
+        <ul>
+          <li><a href="/posts/introduction">Introduction</a></li>
+          <li><a href="/posts/supplies">Tools of the Trade</a></li>
+          <li><a href="/posts/learning-the-cards">Learning the Cards</a></li>
+        </ul>
+      </div>
     </div>
   </div>
   <BookReading />

@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 
+:root {
+  --img-small: "img size";
+  --img-large: "img size";
+}
+
 /* Global CSS written for mobile first : Mobile & Tablet Size */
 
 html {
@@ -122,20 +127,20 @@ li::before {
   .hidden {
     display: none;
   }
-  
+  /* for image spreads om .mdx pages */
 .spread {
     display: flex;
     padding: 2rem 0 0;
   }
-
+/* for image spreads on .astro pages */
 .card-row {
   display: flex;
   flex-wrap: wrap;
-  /* width: 90%; */
   background-color: paleturquoise;
+  border-radius: .5rem;
   /* border: 2px solid green; */
-  align-items: center;
   justify-content: center;
+  padding: 2rem 0;
   
 
   img {
@@ -186,11 +191,18 @@ li::before {
       display: flex;
       margin-left: 1rem;
     }
+    /* for image spreads on .astro pages */
     .card-row {
-      justify-content: space-around;
+      justify-content: center;
       flex-wrap: wrap;
-      background-color: paleturquoise;
-      padding: 1rem 2rem;
+      padding: 0 2rem;
+      align-items: center;
+      /* max-width: 100%; */
+      img {
+        object-fit: contain;
+        width: 114px;;
+        height: 228px;
+      }
     }
     .info-card {
       display: flex;
@@ -210,5 +222,8 @@ li::before {
       justify-content: center;
       /* border: 2px solid deepskyblue; */
       padding:  1rem;
+    }
+    .text {
+      margin: 0;
     }
   }
