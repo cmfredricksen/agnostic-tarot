@@ -132,6 +132,25 @@ li::before {
     display: flex;
     padding: 2rem 0 0;
   }
+.spread-9 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+  background-color: paleturquoise;
+  margin: 0 auto;
+  padding: 2rem 10rem;
+  border-radius: .5rem;
+
+  img {
+    margin: 1rem auto;
+    /* margin: 1rem 0; */
+    object-fit: contain;
+    width: 114px;
+    height: 228px;
+  }
+}
+
+
 /* for image spreads on .astro pages */
 .card-row {
   display: flex;
@@ -176,10 +195,10 @@ li::before {
 
 .emphasis {
   font-style: italic;
-  /* font-size: 1.2rem; */
-  /* color: darkmagenta; */
+  font-size: 1.2rem;
+  color: darkmagenta;
   background-color: paleturquoise;
-  /* padding: 0 1rem; */
+  padding: 0 1rem;
 }
 
 /* Computer Screen Size */
