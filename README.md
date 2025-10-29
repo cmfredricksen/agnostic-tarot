@@ -6,10 +6,10 @@ First learn the skill of reading the cards, then deepen your understanding of th
 
 Agnostic Tarot is meant to be:
 
-FUN
-Easy to get Started
-Unlimited growth potential
-Interesting
-Empowering for regular people
-Validating for intuition
+- FUN
+- Easy to get Started
+- Unlimited growth potential
+- Interesting
+- Empowering for regular people
+- Validating for intuition
 
