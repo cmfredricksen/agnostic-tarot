@@ -57,22 +57,27 @@ p {
 
 ul, ol {
   margin: 1rem 0;
+
+  a {
+    color: darkgreen;
+  }
+}
+
+ul {
+  list-style: circle;
+  font-weight: bolder;
+}
+
+ol {
+  list-style: lower-alpha;
 }
 
 li {
-    list-style: none;
-    color: green;
     padding-bottom: 1rem;
+    color: darkblue;
+    font-weight: 600;
   }
   
-li::before {
-    content: "\269c"; 
-    color: darkblue;
-    display: inline-block;
-    width: 2em;
-    font-weight: 600;
-    margin-left: -2em;
-  }
 
   img {
     max-width: 100%;
