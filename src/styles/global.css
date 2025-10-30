@@ -161,7 +161,7 @@ li::before {
   flex-wrap: wrap;
   background-color: paleturquoise;
   border-radius: .5rem;
-  /* border: 2px solid green; */
+  margin: 1rem 0;
   justify-content: center;
   padding: 2rem 0;
   
