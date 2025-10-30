@@ -21,13 +21,15 @@ const tags = frontmatter.tags
     <div class="hero">
       <h2>{frontmatter.title}</h2>
       <p>{frontmatter.description}</p>
+      <div class="tags">
+        {tags.map((tag) => <a href=`/tags/${tag}`>#{tag} </a>)}
+      </div>
     </div>
     <div class="text">
       <slot />
     </div>
   </article>
-</BaseHTML>
-
+  
 <style>
   article {
     margin: 1rem auto;
@@ -36,4 +38,12 @@ const tags = frontmatter.tags
   .hero {
     flex-direction: column;
   }
+  .tags {
+    color: darkmagenta;
+    font-size: 1rem;
+    font-weight: bold;
+    
+    
+  }
 </style>
+  </BaseHTML>
