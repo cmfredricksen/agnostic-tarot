@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css"
 import BaseHTML from "../layouts/BaseHTML.astro"
+import BookReading from "../components/BookReading.astro"
 import { Image } from "astro:assets"
 import theFool from "../images/cbd_tarot/a22.jpg"
 import papesse from "../images/cbd_tarot/a02.jpg"
@@ -13,23 +14,15 @@ import theWorld from "../images/cbd_tarot/a21.jpg"
   <section class="hero">
     <h2>Welcome to Agnostic Tarot!</h2>
     <p>
-      Agnostic Tarot is the tarot learning and reading system created by C.M.
-      Fredricksen. It is an approach that avoids
-      religious/spiritual/psychological meanings in the cards, for beginners.
-      <p>
-        First learn the skill of reading the cards, then deepen your
-        understanding of the cards. There are a lot of potential paths you can
-        choose to follow in gaining knowledge. Agnostic Tarot is meant to be:
-        <span style="color: darkgreen;font-weight: bold;">
-          - FUN - Easy to get Started - Unlimited growth potential - Interesting
-          - Empowering for regular people - Validating for intuition
-        </span>
-      </p>
+      Tarot is an accessible tool for creative thinking, inspiration, and
+      problem solving. Agnostic tarot is a learning and reading system for
+      beginners that avoids all spiritual, psychological and magickal
+      associations. If you are new to card reading, or new to reading pip decks,
+      you can get started right away. You just need a deck and some guidance.
+      <a href="/posts/buying-a-deck">Buying a Deck</a>
+      <a href="/posts/introduction">Introduction</a>
     </p>
-    <p>
-      Agnostic tarot is for everyone. There are no barriers to entry. You just
-      need a deck and some guidance to get started.
-    </p>
+
     <div class="card-row">
       <Image
         src={theFool}
@@ -60,51 +53,45 @@ import theWorld from "../images/cbd_tarot/a21.jpg"
         title="The World"
       />
     </div>
-    <h3>The Rules of Tarot</h3>
+
     <p>
-      I want to let you know there are no rules to read tarot. For example, You
-      don't have to be gifted your first deck, or burn incense to cleanse your
-      deck, or believe and practice any of the many many "rules" you will hear
-      about tarot. These things can enhance the experience - but are not
-      required. Once you are comfortable with your deck and reading cards, even
-      at a beginners level, you can incorporate any and all beliefs and rituals
-      that you want. Or none of them.
+      Agnostic tarot works by getting regular practice reading the cards. So the
+      approach is light hearted and fun. It is challenging too, like any good
+      game. Once you learn how to read, then you will begin to understand the
+      cards on a deeper level. At that point, you can expand your knowledge if
+      you want to. There are a myriad of possible paths you can take.
     </p>
+
     <p>
-      I have my own practices around tarot, and they have changed over the years
-      as I have learned and grown. Each person should do whatever works for
-      them. That will be different for each reader, so we should be careful
-      about trying to gatekeep tarot reading by making strict rules around the
-      practice. Every rule is an obstacle to learning to read.
+      But you don't have to take it any further. Tarot is fun, and it is
+      beautiful. You can collect decks, you can use them for meditation tools,
+      and as journaling prompts. Or you can keep a deck handy to pull a card to
+      give yourself some clarity as needed.
     </p>
+
     <p>
-      There is no authority in tarot. There is the wisdom gained by those who
-      have gone before, and it holds great value. Yet, learning to read tarot
-      takes experience, memorizing card meanings is only the beginning. As
-      experience is gained your knowledge will expand beyond the initial
-      meanings you learn.
-    </p>
-    <p>
-      So in Agnostic Tarot we focus more on the practice of reading, starting
-      with basic memorization and simple reading exercises. You handle the cards
-      while learning the most basic meanings. You become comfortable using them
-      and will begin noticing more details about them. This is when the real fun
-      begins, and your understanding grows.
-    </p>
-    <p>
-      I have over 30 years of experience reading tarot. It is an effective tool
-      for clearing up confusion and seeing other paths to our goals. The imagery
-      and randomness of cartomancy sidestep the anxious mind allowing us to have
-      new perspectives. Tarot is really useful, if you are interested in it go
-      ahead and get a deck.
+      The goal of this website is to give people a way to use tarot cards
+      without all of the "woo" that is associated with it. There is some
+      gatekeeping when it comes to tarot, and a bunch of rules and superstitions
+      too. That is a deterrent to many people from cartomancy as a whole. And
+      reading cards is a great thinking tool, as a practical matter. No woo
+      needed.
     </p>
   </section>
-</BaseHTML>
 
-<style>
-  img {
-    /* object-fit: contain; */
-    /* width: 114px; */
-    /* height: 228px; */
-  }
-</style>
+  <style>
+    img {
+      /* object-fit: contain; */
+      /* width: 114px; */
+      /* height: 228px; */
+    }
+    a {
+      font-size: 1.25rem;
+      background-color: burlywood;
+      color: darkred;
+    }
+    a:hover {
+      color: lightgoldenrodyellow;
+    }
+  </style>
+</BaseHTML>

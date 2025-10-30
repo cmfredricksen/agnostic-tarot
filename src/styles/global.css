@@ -219,6 +219,7 @@ li::before {
     }
     /* for image spreads on .astro pages */
     .card-row {
+      margin: 1rem 0;
       justify-content: center;
       flex-wrap: wrap;
       padding:  2rem;
