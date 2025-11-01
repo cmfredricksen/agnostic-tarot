@@ -25,6 +25,7 @@ const tags = frontmatter.tags
         {tags.map((tag) => <a href=`/tags/${tag}`>#{tag} </a>)}
       </div>
     </div>
+    
     <div class="text">
       <slot />
     </div>
@@ -33,20 +34,29 @@ const tags = frontmatter.tags
 <style>
   article {
     margin: 1rem auto;
-    color: #000;
   }
   .hero {
     flex-direction: column;
   }
   .tags {
-    color: darkmagenta;
+    color: var(--clr-accent);
     font-size: 1rem;
     font-weight: bold;
-    
-    
+
+    a {
+      color: var(--clr-light);
+      margin-right: .5rem;
+    }
+    a:hover {
+
+      color: var(--clr-accent);
+    }
   }
   .text {
     margin: 0 1rem;
+    p, li, h2 {
+      color: var(--clr-dark);
+    }
   }
 </style>
   </BaseHTML>

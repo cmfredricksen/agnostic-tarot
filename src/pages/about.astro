@@ -21,7 +21,7 @@ import theWorld from "../images/cbd_tarot/a21.jpg"
     </p>
     <div class="link-list">
       <a href="/posts/buying-a-deck">Buying a Deck</a>
-      &clubs;
+      <span>&clubs;</span>
       <a href="/posts/introduction">Introduction</a>
     </div>
 
@@ -60,11 +60,15 @@ import theWorld from "../images/cbd_tarot/a21.jpg"
   <style>
     a {
       font-size: 1.25rem;
-      background-color: burlywood;
-      color: darkred;
+      color: var(--clr-accent);
+      /* color: darkred; */
     }
     a:hover {
-      color: lightgoldenrodyellow;
+      /* color: lightgoldenrodyellow; */
+      color: var(--clr-light);
+    }
+    span {
+      color: var(--clr-light);
     }
   </style>
 </BaseHTML>

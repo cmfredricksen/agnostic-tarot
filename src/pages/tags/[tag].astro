@@ -26,23 +26,28 @@ const { posts } = Astro.props
 ---
 
 <BaseHTML pageTitle={tag}>
-  <h2>Posts tagged with #{tag}</h2>
-  <ul class="rt-margin">
-    {
-      posts.map((post: any) => (
-        <li>
-          <a href={post.frontmatter.path}>{post.frontmatter.title}</a>
-        </li>
-      ))
-    }
-  </ul>
+  <div class="link-box">
+    <h2>Posts tagged with #{tag}</h2>
+    <ul class="rt-margin">
+      {
+        posts.map((post: any) => (
+          <li>
+            <a href={post.frontmatter.path}>{post.frontmatter.title}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
 </BaseHTML>
 
 <style>
+  .link-box {
+    background-color: var(--clr-dark);
+  }
   h2 {
-    color: darkblue;
+    color: var(--clr-accent);
     margin: 1rem 0;
-    background-color: lavenderblush;
+    /* background-color: var(--clr-dark); */
     padding: 1rem;
   }
   ul {

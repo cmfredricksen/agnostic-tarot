@@ -44,12 +44,21 @@ const posts = Object.values(
     flex-wrap: wrap;
     margin: 0 auto;
     justify-content: center;
+    background-color: var(--clr-dark);
+
+    a {
+      color: var(--clr-accent);
+    }
+    a:hover {
+      color: var(--clr-light);
+    }
   }
   .links {
+    border: 2px solid var(--clr-accent);
     display: flex;
     flex-direction: column;
     margin: 1rem;
-    background-color: lavenderblush;
+    background-color: var(--clr-paleturq);
     /* border: 2px solid turquoise; */
     border-radius: 5px;
     padding: 1rem;

@@ -3,12 +3,20 @@
 :root {
   --img-small: "img size";
   --img-large: "img size";
+
+  --clr-black: #000;
+  --clr-white: #fff;
+  --clr-dark: #3d3d5c;
+  --clr-clr-medium: #a3a3c2;
+  --clr-light: #e6e6fa;
+  --clr-accent: burlywood;
 }
 
 /* Global CSS written for mobile first : Mobile & Tablet Size */
 
 html {
-  background-color: lavender;
+  
+  background-color: var(--clr-light);
   font-family: "Inconsolata";
 }
 
@@ -26,32 +34,39 @@ body {
 
 h1 {
   font-size: 2.5rem;
-  color: darkblue;
+  color: var(--clr-dark);
+}
+
+h2 {
+  color: var(--clr-light);
 }
 
 p {
   margin: 1rem 0;
+  color: var(--clr-light);
 }
 
 a {
   text-decoration: none;
-  color: darkblue;
+  color: var(--clr-dark);
   
   /* border: 2px solid purple; */
 }
 
 a:hover {
-  color: darkmagenta;
+  color: var(--clr-accent);
+  background-color: var(--clr-dark);
 }
 
 p {
   a {
     font-size: 1.25rem;
-    background-color: burlywood;
-    color: darkred;
+    background-color: var(--clr-accent);
+    color: var(--clr-dark);
   }
   a:hover {
-    color: lightgoldenrodyellow;
+    color: var(--clr-accent);
+    background-color: var(--clr-dark);
   }
 }
 
@@ -59,12 +74,12 @@ ul, ol {
   margin: 1rem 0;
 
   a {
-    color: darkgreen;
+    color: var(--clr-light);
   }
 }
 
 ul {
-  list-style: circle;
+  list-style: lower-roman;
   font-weight: bolder;
 }
 
@@ -74,7 +89,7 @@ ol {
 
 li {
     padding-bottom: 1rem;
-    color: darkblue;
+    color: var(--clr-light);
     font-weight: 600;
   }
   
@@ -86,19 +101,18 @@ li {
   
   table {
     border-collapse: collapse;
-    border: 2px solid darkblue;
+    border: 2px solid var(--clr-dark);
     width: 70%;
     margin: 1rem 0;
   }
   
   th {
-    /* background-color: paleturquoise; */
     padding:  1rem;
-    border: 2px solid green;
+    border: 2px solid var(--clr-dark);
   }
   
   td {
-    border: 2px solid green;;
+    border: 2px solid var(--clr-dark);;
     padding:  1rem;
   }
   
@@ -107,7 +121,7 @@ li {
   }
   
   hr {
-    border: 1px solid green;
+    border: 1px solid var(--clr-dark);
   }
   
   /* Class Sections */
@@ -120,10 +134,10 @@ li {
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: lavenderblush;
+    background-color: var(--clr-dark);
     padding: 2rem;
-    border-left: 1px solid paleturquoise;
-    border-right: 1px solid paleturquoise;
+    /* border-left: 1px solid var(--clr-paleturq); */
+    /* border-right: 1px solid var(--clr-paleturq); */
   }
   
   .contents {
@@ -145,14 +159,13 @@ li {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   
-  background-color: paleturquoise;
+  background-color: var(--clr-dark);
   margin: 0 auto;
   padding: 2rem 10rem;
   border-radius: .5rem;
 
   img {
     margin: 1rem auto;
-    /* margin: 1rem 0; */
     object-fit: contain;
     width: 114px;
     height: 228px;
@@ -164,7 +177,7 @@ li {
 .card-row {
   display: flex;
   flex-wrap: wrap;
-  background-color: paleturquoise;
+  background-color: var(--clr-dark);
   border-radius: .5rem;
   margin: 1rem 0;
   justify-content: center;
@@ -185,9 +198,10 @@ li {
   display: flex; 
   flex-direction: column;
   justify-content: space-around;
-  background-color: lavenderblush;
+  background-color: var(--clr-dark);
   width: 60%;
-  border: 1px solid paleturquoise;
+  color: var(--clr-light);
+  /* border: 1px solid var(--clr-paleturq); */
 }
 
 .info-card {
@@ -197,14 +211,15 @@ li {
 }
 
 .info-text {
-  background-color: paleturquoise;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
 }
 
 .emphasis {
   font-style: italic;
   font-size: 1.2rem;
   color: darkmagenta;
-  background-color: paleturquoise;
+  background-color: var(--clr-dark);
   padding: 0 1rem;
 }
 
@@ -238,7 +253,7 @@ li {
       width: 60%;
       margin: 1rem 2rem;
       padding: .5rem;
-      background-color: paleturquoise;
+      background-color: var(--clr-dark);
       
       img {
         width: 114px;;
@@ -249,8 +264,19 @@ li {
     .info-text {
       justify-content: center;
       padding:  1rem;
+      
+      p {
+        color: var(--clr-light);
+
+      }
     }
     .text {
       margin: 0;
+      
+      p {
+        /* color: var(--clr-dark); */
+        font-weight: 500;
+
+      }
     }
   }
