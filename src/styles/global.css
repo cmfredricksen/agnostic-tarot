@@ -95,6 +95,24 @@ td {
   margin: 0 auto;
 }
 
+.spread-9 {
+  width: 40%;
+  margin: 1rem auto;
+  padding: 2rem 0;
+  border: 2px solid royalblue;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.spread-9 img {
+  margin: .5rem 0;
+  width: 72px;
+  height: 144px;
+}
+
+
 .link-container {
   border: 2px solid red;
   display: grid;
@@ -112,3 +130,38 @@ td {
   margin: 1rem auto;
 }
 
+.tag-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1rem 1rem 2rem;
+
+}
+
+.tag-box a {
+  margin: 1rem;
+}
+
+/* @media Mobile Settings ************************************* */
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: aqua;
+  }
+  main {
+    width: 100%;
+    padding: .5rem;
+  }
+  table {
+    width: 100%;
+  }
+  .hidden {
+    display: none;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .spread-9 {
+    width: 100%;
+  }
+}
