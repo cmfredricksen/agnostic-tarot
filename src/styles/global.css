@@ -150,10 +150,10 @@ td {
   }
   main {
     width: 100%;
-    padding: .5rem;
+    padding: 1rem;
   }
   table {
-    width: 100%;
+    max-width: 100%;
   }
   .hidden {
     display: none;
@@ -166,5 +166,11 @@ td {
   }
   .img-raw {
     width: 100%;
+  }
+  .link-container {
+    grid-template-columns: 1fr;
+  }
+  .tag-box a {
+    font-size: 1.5rem;
   }
 }
