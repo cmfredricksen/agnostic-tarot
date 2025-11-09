@@ -33,11 +33,15 @@ const tags = frontmatter.tags
   
 <style>
   article {
-    margin: 1rem auto;
+    // margin: 1rem auto;
+    width: 100%;
   }
+
   .hero {
     flex-direction: column;
   }
+
+
   .tags {
     color: var(--clr-accent);
     font-size: 1rem;
@@ -52,11 +56,30 @@ const tags = frontmatter.tags
       color: var(--clr-accent);
     }
   }
+
   .text {
-    margin: 0 1rem;
-    p, li, h2 {
+    // margin: 0 1rem;
+
+    p {
       color: var(--clr-dark);
     }
+
+    li {
+
+      a {
+        color: var(--clr-light);
+        background-color: var(--clr-dark);
+      }
+      a:hover {
+        color: var(--clr-accent);
+      }
+
+    }
   }
+
+  .info-text {
+    color: var(--clr-light);
+  }
+
 </style>
   </BaseHTML>

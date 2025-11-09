@@ -7,7 +7,7 @@
   --clr-black: #000;
   --clr-white: #fff;
   --clr-dark: #3d3d5c;
-  --clr-clr-medium: #a3a3c2;
+  --clr-medium: #a3a3c2;
   --clr-light: #e6e6fa;
   --clr-accent: burlywood;
 }
@@ -15,7 +15,6 @@
 /* Global CSS written for mobile first : Mobile & Tablet Size */
 
 html {
-  
   background-color: var(--clr-light);
   font-family: "Inconsolata";
 }
@@ -28,7 +27,7 @@ html {
 
 body {
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0 1rem ;
   line-height: 1.5;
 }
 
@@ -38,7 +37,7 @@ h1 {
 }
 
 h2 {
-  color: var(--clr-light);
+  /* color: var(--clr-light); */
 }
 
 p {
@@ -49,8 +48,6 @@ p {
 a {
   text-decoration: none;
   color: var(--clr-dark);
-  
-  /* border: 2px solid purple; */
 }
 
 a:hover {
@@ -89,76 +86,90 @@ ol {
 
 li {
     padding-bottom: 1rem;
-    color: var(--clr-light);
+    /* color: var(--clr-light); */
     font-weight: 600;
   }
-  
 
-  img {
+li a {
+  color: var(--clr-light);
+}
+
+img {
     max-width: 100%;
   }
   
   
-  table {
+table {
     border-collapse: collapse;
     border: 2px solid var(--clr-dark);
     width: 70%;
     margin: 1rem 0;
   }
   
-  th {
+th {
     padding:  1rem;
     border: 2px solid var(--clr-dark);
   }
   
-  td {
+td {
     border: 2px solid var(--clr-dark);;
     padding:  1rem;
   }
   
-  sup {
+sup {
     font-weight: bold;
   }
   
-  hr {
+hr {
     border: 1px solid var(--clr-dark);
   }
   
-  /* Class Sections */
-  .main {
+/* Class Sections */
+.main {
     width: 100%;
   }
   
-  .hero {
+.hero {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: var(--clr-dark);
     padding: 2rem;
+    border-top: 2px solid var(--clr-accent);
+    border-bottom: 2px solid var(--clr-accent);
     /* border-left: 1px solid var(--clr-paleturq); */
     /* border-right: 1px solid var(--clr-paleturq); */
+
+    h2, li {
+      color: var(--clr-light);
+    }
+
+    
   }
   
-  .contents {
+.contents {
     padding: 3rem;
   }
   
-  .rt-margin {
+.rt-margin {
     margin-left: 3.5rem;
   }
-  .hidden {
+
+.hidden {
     display: none;
   }
-  /* for image spreads om .mdx pages */
+
+/* for image spreads om .mdx pages */
+
 .spread {
     display: flex;
     padding: 2rem 0 0;
   }
+
 .spread-9 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  
   background-color: var(--clr-dark);
   margin: 0 auto;
   padding: 2rem 10rem;
@@ -172,18 +183,17 @@ li {
   }
 }
 
-
 /* for image spreads on .astro pages */
+
 .card-row {
   display: flex;
   flex-wrap: wrap;
   background-color: var(--clr-dark);
-  border-radius: .5rem;
-  margin: 1rem 0;
+  /* border-radius: .5rem; */
+  /* margin: 1rem 0; */
   justify-content: center;
   padding: 2rem 0;
   
-
   img {
     justify-content: space-evenly;
     margin: .5rem;
@@ -201,10 +211,11 @@ li {
   background-color: var(--clr-dark);
   width: 60%;
   color: var(--clr-light);
-  /* border: 1px solid var(--clr-paleturq); */
 }
 
 .info-card {
+  color: var(--clr-light);
+  
   img {
     width: 75px;
   }
@@ -223,60 +234,70 @@ li {
   padding: 0 1rem;
 }
 
-/* Computer Screen Size */
+/* Computer Screen Size ***************************************** */
+
 @media screen and (min-width: 768px) {
     body {
       width: 60%;
     }
+
     img {
       width: 70%;
     }
+
     .hidden {
       display: flex;
       margin-left: 1rem;
     }
+
+
     /* for image spreads on .astro pages */
     .card-row {
-      margin: 1rem 0;
+      /* margin: 1rem 0; */
+      /* border-top: 2px solid var(--clr-accent); */
       justify-content: center;
       flex-wrap: wrap;
       padding:  2rem;
       align-items: center;
+      width: 100%;
+
       img {
         object-fit: contain;
         width: 114px;;
         height: 228px;
       }
     }
+
     .info-card {
       display: flex;
       width: 60%;
       margin: 1rem 2rem;
       padding: .5rem;
       background-color: var(--clr-dark);
+      /* color: var(--clr-light); */
       
       img {
         width: 114px;;
         height: 228px;
         align-self: center;
       }
+
+      p {
+        color: var(--clr-light);
+      }
     }
+
     .info-text {
       justify-content: center;
       padding:  1rem;
+      /* color: var(--clr-light); */
       
       p {
         color: var(--clr-light);
-
       }
     }
-    .text {
-      margin: 0;
-      
-      p {
-        /* color: var(--clr-dark); */
-        font-weight: 500;
 
-      }
+    .text p {
+      color: var(--clr-light);
     }
-  }
+}
