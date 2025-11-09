@@ -43,7 +43,7 @@ a {
 }
 
 a:hover {
-  color: deeppink;
+  color: var(--clr-accent);
 }
 
 li {
@@ -63,7 +63,7 @@ table {
 
 th {
   padding: 1rem ;
-  border: 2px solid deeppink;
+  border: 2px solid var(--clr-dark);
 }
 
 td {
@@ -85,6 +85,29 @@ td {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+
+  a {
+    color: var(--clr-accent);
+  }
+  a:hover {
+    color: var(--clr-white);
+  }
+}
+
+.post-head {
+  background-color: var(--clr-dark);
+  padding: 1rem 1rem 2rem;
+  color: var(--clr-light);
+}
+
+.post-head a {
+  color: var(--clr-accent);
+}
+
+.post-head a:hover {
+  color: var(--clr-white);
 }
 
 .card-row {
@@ -93,6 +116,7 @@ td {
   justify-content: center;
   padding: 1rem;
   margin: 0 auto;
+  background-color: var(--clr-medium);
 }
 
 .spread-9 {
@@ -114,15 +138,26 @@ td {
 
 
 .link-container {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
 
 .link {
-  border: 2px solid deepskyblue;
+  /* border: 2px solid deepskyblue; */
   padding: 1rem;
+  background-color: var(--clr-dark);
+
+  p {
+    color: var(--clr-light);
+  }
+  a {
+    color: var(--clr-accent);
+  }
+  a:hover {
+    color: var(--clr-white);
+  }
 }
 
 .center-txt {
@@ -135,6 +170,14 @@ td {
   flex-wrap: wrap;
   width: 100%;
   padding: 1rem 1rem 2rem;
+  background-color: var(--clr-dark);
+
+  a {
+    color: var(--clr-accent);
+  }
+  a:hover {
+    color: var(--clr-white);
+  }
 
 }
 
@@ -142,11 +185,20 @@ td {
   margin: 1rem;
 }
 
+.info-card {
+  width: 50%;
+  display: flex;
+}
+
+.card-text {
+  margin-left: 1rem;
+}
+
 /* @media Mobile Settings ************************************* */
 
 @media screen and (max-width: 768px) {
   body {
-    background-color: aqua;
+    background-color: var(--clr-light);
   }
   main {
     width: 100%;
@@ -154,6 +206,9 @@ td {
   }
   table {
     max-width: 100%;
+  }
+  .contents {
+    padding-left: 1rem;
   }
   .hidden {
     display: none;
@@ -172,5 +227,12 @@ td {
   }
   .tag-box a {
     font-size: 1.5rem;
+  }
+  .info-card {
+    flex-direction: column;
+    background-color: var(--clr-medium);
+    width: 100%;
+    margin: 2rem 0;
+    padding: 1rem .5rem;
   }
 }

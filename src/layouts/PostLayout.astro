@@ -18,13 +18,17 @@ const tags = frontmatter.tags
 
 <BaseHTML title={frontmatter.title}>
   <article>
-    <h2>{frontmatter.title}</h2>
-    <p>{frontmatter.description}</p>
+    <div class="post-head">
 
-    <ul class="tag-container">
+      <h2>{frontmatter.title}</h2>
+      <p>{frontmatter.description}</p>
+      
+      <ul class="tag-container">
         {tags.map((tag) => <a href=`/tags/${tag}`>#{tag} </a>)}
     </ul>
-
+    
+    </div>
+    
     <slot />
 
   </article>
