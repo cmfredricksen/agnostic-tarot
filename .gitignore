@@ -26,3 +26,6 @@ pnpm-debug.log*
 # files not ready
 keyword-blank.mdx
 keyword-blank.pdf
+backuplayoutPost.astro
+backup.css
+

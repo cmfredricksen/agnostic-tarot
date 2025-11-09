@@ -18,68 +18,15 @@ const tags = frontmatter.tags
 
 <BaseHTML title={frontmatter.title}>
   <article>
-    <div class="hero">
-      <h2>{frontmatter.title}</h2>
-      <p>{frontmatter.description}</p>
-      <div class="tags">
+    <h2>{frontmatter.title}</h2>
+    <p>{frontmatter.description}</p>
+
+    <ul class="tag-container">
         {tags.map((tag) => <a href=`/tags/${tag}`>#{tag} </a>)}
-      </div>
-    </div>
-    
-    <div class="text">
-      <slot />
-    </div>
+    </ul>
+
+    <slot />
+
   </article>
-  
-<style>
-  article {
-    // margin: 1rem auto;
-    width: 100%;
-  }
 
-  .hero {
-    flex-direction: column;
-  }
-
-
-  .tags {
-    color: var(--clr-accent);
-    font-size: 1rem;
-    font-weight: bold;
-
-    a {
-      color: var(--clr-light);
-      margin-right: .5rem;
-    }
-    a:hover {
-
-      color: var(--clr-accent);
-    }
-  }
-
-  .text {
-    // margin: 0 1rem;
-
-    p {
-      color: var(--clr-dark);
-    }
-
-    li {
-
-      a {
-        color: var(--clr-light);
-        background-color: var(--clr-dark);
-      }
-      a:hover {
-        color: var(--clr-accent);
-      }
-
-    }
-  }
-
-  .info-text {
-    color: var(--clr-light);
-  }
-
-</style>
-  </BaseHTML>
+</BaseHTML>

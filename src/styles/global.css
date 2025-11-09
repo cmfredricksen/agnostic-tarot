@@ -12,292 +12,103 @@
   --clr-accent: burlywood;
 }
 
-/* Global CSS written for mobile first : Mobile & Tablet Size */
-
-html {
-  background-color: var(--clr-light);
-  font-family: "Inconsolata";
-}
-
 *, ::after, ::before {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0 auto;
-  padding: 0 1rem ;
-  line-height: 1.5;
+  font-family: "Inconsolata", sans-serif;
+  font-size: 1.25rem;
 }
 
-h1 {
-  font-size: 2.5rem;
-  color: var(--clr-dark);
+main {
+  width: 70%;
+  margin: 0 auto;
+}
+
+main p {
+  margin:  1rem 0;
+  line-height: 1.25;
+
 }
 
 h2 {
-  /* color: var(--clr-light); */
-}
-
-p {
-  margin: 1rem 0;
-  color: var(--clr-light);
+  margin: 2rem 0;
 }
 
 a {
   text-decoration: none;
-  color: var(--clr-dark);
 }
 
 a:hover {
-  color: var(--clr-accent);
-  background-color: var(--clr-dark);
-}
-
-p {
-  a {
-    font-size: 1.25rem;
-    background-color: var(--clr-accent);
-    color: var(--clr-dark);
-  }
-  a:hover {
-    color: var(--clr-accent);
-    background-color: var(--clr-dark);
-  }
-}
-
-ul, ol {
-  margin: 1rem 0;
-
-  a {
-    color: var(--clr-light);
-  }
-}
-
-ul {
-  list-style: lower-roman;
-  font-weight: bolder;
-}
-
-ol {
-  list-style: lower-alpha;
+  color: deeppink;
 }
 
 li {
-    padding-bottom: 1rem;
-    /* color: var(--clr-light); */
-    font-weight: 600;
-  }
+  list-style: none;
+  margin: 1rem 0;
 
-li a {
-  color: var(--clr-light);
 }
 
 img {
-    max-width: 100%;
-  }
-  
-  
-table {
-    border-collapse: collapse;
-    border: 2px solid var(--clr-dark);
-    width: 70%;
-    margin: 1rem 0;
-  }
-  
-th {
-    padding:  1rem;
-    border: 2px solid var(--clr-dark);
-  }
-  
-td {
-    border: 2px solid var(--clr-dark);;
-    padding:  1rem;
-  }
-  
-sup {
-    font-weight: bold;
-  }
-  
-hr {
-    border: 1px solid var(--clr-dark);
-  }
-  
-/* Class Sections */
-.main {
-    width: 100%;
-  }
-  
-.hero {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: var(--clr-dark);
-    padding: 2rem;
-    border-top: 2px solid var(--clr-accent);
-    border-bottom: 2px solid var(--clr-accent);
-    /* border-left: 1px solid var(--clr-paleturq); */
-    /* border-right: 1px solid var(--clr-paleturq); */
-
-    h2, li {
-      color: var(--clr-light);
-    }
-
-    
-  }
-  
-.contents {
-    padding: 3rem;
-  }
-  
-.rt-margin {
-    margin-left: 3.5rem;
-  }
-
-.hidden {
-    display: none;
-  }
-
-/* for image spreads om .mdx pages */
-
-.spread {
-    display: flex;
-    padding: 2rem 0 0;
-  }
-
-.spread-9 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  background-color: var(--clr-dark);
-  margin: 0 auto;
-  padding: 2rem 10rem;
-  border-radius: .5rem;
-
-  img {
-    margin: 1rem auto;
-    object-fit: contain;
-    width: 114px;
-    height: 228px;
-  }
+  width: 114px;
+  height: 228px;
 }
 
-/* for image spreads on .astro pages */
+table {
+  border: 2px solid orange;
+}
+
+th {
+  padding: 1rem ;
+  border: 2px solid deeppink;
+}
+
+td {
+  padding: 1rem ;
+  border: 2px solid slateblue;
+
+}
+
+/* Classes ***************************************** */
+.img-lg {
+  width: 200px;
+  height: 400px;
+}
+
+.hero {
+  padding: 1.5rem 0;
+  margin: 0 auto 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
 
 .card-row {
   display: flex;
-  flex-wrap: wrap;
-  background-color: var(--clr-dark);
-  /* border-radius: .5rem; */
-  /* margin: 1rem 0; */
+  align-items: center;
   justify-content: center;
-  padding: 2rem 0;
-  
-  img {
-    justify-content: space-evenly;
-    margin: .5rem;
-  }
+  padding: 1rem;
+  margin: 0 auto;
 }
 
-.content-list {
-  padding-left: 3rem;
+.link-container {
+  border: 2px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
 
-.card-container {
-  display: flex; 
-  flex-direction: column;
-  justify-content: space-around;
-  background-color: var(--clr-dark);
-  width: 60%;
-  color: var(--clr-light);
+.link {
+  border: 2px solid deepskyblue;
+  padding: 1rem;
 }
 
-.info-card {
-  color: var(--clr-light);
-  
-  img {
-    width: 75px;
-  }
+.center-txt {
+  text-align: center;
+  margin: 1rem auto;
 }
 
-.info-text {
-  background-color: var(--clr-dark);
-  color: var(--clr-light);
-}
-
-.emphasis {
-  font-style: italic;
-  font-size: 1.2rem;
-  color: darkmagenta;
-  background-color: var(--clr-dark);
-  padding: 0 1rem;
-}
-
-/* Computer Screen Size ***************************************** */
-
-@media screen and (min-width: 768px) {
-    body {
-      width: 60%;
-    }
-
-    img {
-      width: 70%;
-    }
-
-    .hidden {
-      display: flex;
-      margin-left: 1rem;
-    }
-
-
-    /* for image spreads on .astro pages */
-    .card-row {
-      /* margin: 1rem 0; */
-      /* border-top: 2px solid var(--clr-accent); */
-      justify-content: center;
-      flex-wrap: wrap;
-      padding:  2rem;
-      align-items: center;
-      width: 100%;
-
-      img {
-        object-fit: contain;
-        width: 114px;;
-        height: 228px;
-      }
-    }
-
-    .info-card {
-      display: flex;
-      width: 60%;
-      margin: 1rem 2rem;
-      padding: .5rem;
-      background-color: var(--clr-dark);
-      /* color: var(--clr-light); */
-      
-      img {
-        width: 114px;;
-        height: 228px;
-        align-self: center;
-      }
-
-      p {
-        color: var(--clr-light);
-      }
-    }
-
-    .info-text {
-      justify-content: center;
-      padding:  1rem;
-      /* color: var(--clr-light); */
-      
-      p {
-        color: var(--clr-light);
-      }
-    }
-
-    .text p {
-      color: var(--clr-light);
-    }
-}

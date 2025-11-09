@@ -3,8 +3,7 @@ import Nav from "./Nav.astro"
 ---
 
 <header>
-  <h1><a href="/">Agnostic Tarot</a></h1>
-  <h1><a href="/">&#9884;</a></h1>
+  <h1><a href="/">Agnostic Tarot &#9884;</a></h1>
   <Nav />
 </header>
 
@@ -12,16 +11,7 @@ import Nav from "./Nav.astro"
   header {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-  }
-  h1 {
-    color: var(--clr-dark);
-  }
-
-  @media screen and (min-width: 768px) {
-    header {
-      width: 100%;
-      background-color: var(--clr-medium);
-    }
   }
 </style>
