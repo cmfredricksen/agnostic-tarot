@@ -144,6 +144,14 @@ td {
   height: 144px;
 }
 
+.card-container {
+  background-color: var(--clr-medium);
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .link-container {
   /* border: 2px solid red; */
@@ -173,12 +181,21 @@ td {
   margin: 1rem auto;
 }
 
+.tags {
+  color: var(--clr-light);
+  background-color: var(--clr-dark);
+  padding: 1rem 0;
+
+  h2 {
+    margin: 0 2rem;
+  }
+}
+
 .tag-box {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   padding: 1rem 1rem 2rem;
-  background-color: var(--clr-dark);
 
   a {
     color: var(--clr-accent);

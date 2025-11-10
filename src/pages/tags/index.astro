@@ -16,7 +16,7 @@ const sortedTags = tags.sort()
 <BaseHTML title="Tag Index">
   <section>
     <div class="tags">
-      <h2>Tags</h2>
+      <h2>#Topics</h2>
       <div class="tag-box">
         {
           sortedTags.map((tag) => (
@@ -32,12 +32,16 @@ const sortedTags = tags.sort()
     <img
       src={theJuggler.src}
       alt="The Juggler: 1"
+      title="The Juggler"
     />
-    <h3>The Juggler</h3>
-    <p class="bg-color">
-      The Juggler brings their skills to the table, these include natural gifts
-      and expertise. They know more than you would think and can be very
-      cunning. They are always moving forward and don't dwell on the past.
-    </p>
+    <div class="card-text">
+      <h3>The Juggler</h3>
+      <p class="bg-color">
+        The Juggler brings their skills to the table, these include natural
+        gifts and expertise. They know more than you would think and can be very
+        cunning. They draw on their experiences and hard won knowledge to
+        achieve their goals.
+      </p>
+    </div>
   </div>
 </BaseHTML>
