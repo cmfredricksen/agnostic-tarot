@@ -74,7 +74,6 @@ th {
   border: 2px solid var(--clr-accent);
   color: var(--clr-accent);
   background-color: var(--clr-dark);
-  /* font-weight: 400; */
 }
 
 td {
@@ -134,7 +133,8 @@ td {
   width: 40%;
   margin: 1rem auto;
   padding: 2rem 0;
-  border: 2px solid royalblue;
+  background-color: var(--clr-medium);
+  border: 3px solid var(--clr-accent);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
@@ -170,7 +170,6 @@ td {
 }
 
 .link {
-  /* border: 2px solid deepskyblue; */
   padding: 1rem;
   background-color: var(--clr-dark);
 
