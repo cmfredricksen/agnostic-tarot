@@ -3,6 +3,7 @@ import BaseHTML from "../../layouts/BaseHTML.astro"
 
 import { Image } from "astro:assets"
 import theJuggler from "../../images/cbd_tarot/a01.jpg"
+import papesse from "../../images/cbd_tarot/a02.jpg"
 const allPosts = Object.values(
   import.meta.glob("../posts/*.mdx", { eager: true })
 )
@@ -41,6 +42,22 @@ const sortedTags = tags.sort()
         gifts and expertise. They know more than you would think and can be very
         cunning. They draw on their experiences and hard won knowledge to
         achieve their goals.
+      </p>
+    </div>
+  </div>
+  <div class="card-container">
+    <img
+      src={papesse.src}
+      alt="Papesse: 2"
+      title="Papesse"
+    />
+    <div class="card-text">
+      <h3>Papesse</h3>
+      <p class="bg-color">
+        Papesse is open and receptive to her intuition. She is an expert in her
+        chosen field, curious and educated. She is a discrete counselor and a
+        guide in matters of the heart. A good listener and observer, she is
+        tuned in to the changes happening around her.
       </p>
     </div>
   </div>
