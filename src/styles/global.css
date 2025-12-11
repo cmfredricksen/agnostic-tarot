@@ -29,8 +29,9 @@ main {
 }
 
 main p {
-  margin:  1rem 0;
+  margin:  1rem 4rem;
   line-height: 1.25;
+  margin-left: 0;
 
   a {
     text-decoration: underline;
@@ -43,7 +44,7 @@ main p {
 }
 
 h2 {
-  margin: 2rem 0;
+  margin: 2rem 0 .5rem;
 }
 
 a {
@@ -236,6 +237,9 @@ td {
   main {
     width: 100%;
     padding: 1rem;
+    p {
+      margin: 1rem 0;
+    }
   }
   table {
     max-width: 100%;
