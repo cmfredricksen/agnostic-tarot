@@ -269,6 +269,9 @@ td {
   .hero {
     grid-template-columns: 1fr;
   }
+  .post-head  a{
+    margin-left: 0;
+  }
   .spread-9 {
     width: 100%;
   }
