@@ -246,6 +246,9 @@ td {
       margin: 1rem 0;
     }
   }
+  h2 {
+    margin-left: 0;
+  }
   table {
     max-width: 100%;
   }
