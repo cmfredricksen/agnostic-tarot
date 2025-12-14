@@ -180,6 +180,7 @@ td {
 
   p {
     color: var(--clr-light);
+    margin-left: 0;
   }
   a {
     color: var(--clr-accent);
