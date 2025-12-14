@@ -50,6 +50,9 @@ main p {
 h2 {
   margin: 2rem 1rem .5rem;
 }
+strong {
+  margin-left: 1rem;
+}
 
 a {
   text-decoration: none;
@@ -115,10 +118,12 @@ td {
   background-color: var(--clr-dark);
   padding: 1rem 1rem 2rem;
   color: var(--clr-light);
+
 }
 
 .post-head a {
   color: var(--clr-accent);
+  margin-left: 1rem;
 }
 
 .post-head a:hover {
@@ -247,6 +252,9 @@ td {
     }
   }
   h2 {
+    margin-left: 0;
+  }
+  strong {
     margin-left: 0;
   }
   table {
