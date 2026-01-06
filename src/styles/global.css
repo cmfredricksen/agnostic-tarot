@@ -49,6 +49,7 @@ main p {
 
 h2, h3 {
   margin: 2rem 1rem .5rem;
+  font-size: 1.0;
 }
 strong {
   margin-left: 1rem;
@@ -88,6 +89,10 @@ td {
   padding: 1rem ;
   border: 2px solid var(--clr-medium);
 
+}
+
+.md-table {
+  margin-left: 2rem;
 }
 
 /* Classes ***************************************** */
@@ -259,6 +264,11 @@ td {
   }
   table {
     max-width: 100%;
+  }
+  .md-table {
+    margin-left: 0;
+    width: 100%;
+    padding:0
   }
   .contents {
     padding-left: 1rem;
