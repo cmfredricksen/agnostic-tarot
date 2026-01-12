@@ -262,6 +262,7 @@ td {
   body {
     background-color: var(--clr-light);
   }
+
   main {
     width: 100%;
     padding: 1rem;
@@ -271,6 +272,9 @@ td {
   }
   h2 {
     margin-left: 0;
+  }
+  img {
+    margin: 0;
   }
   strong {
     margin-left: 0;
