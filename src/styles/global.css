@@ -32,7 +32,7 @@ main {
 
 main p {
   margin:  1rem 4rem;
-  line-height: 1.25;
+  line-height: 1.5;
   margin-left: 1rem;
 
   a {
@@ -200,6 +200,17 @@ td {
   }
 }
 
+.numerals li {
+  list-style:decimal;
+  margin-left: 3.5rem;
+  
+}
+
+.numerals li::marker {
+  list-style-position: inside;
+  font-weight: bold;
+  background-color: #deb887;
+}
 .center-txt {
   text-align: center;
   margin: 1rem auto;
