@@ -72,6 +72,8 @@ li {
 img {
   width: 114px;
   height: 228px;
+  margin: 0 .5rem;
+  
 }
 
 table {
@@ -289,6 +291,10 @@ td {
   }
   .hero {
     grid-template-columns: 1fr;
+
+    img {
+      margin: 0;
+    }
   }
   .post-head  a{
     margin-left: 0;

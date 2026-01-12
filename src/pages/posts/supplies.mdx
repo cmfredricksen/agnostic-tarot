@@ -16,7 +16,7 @@ image: {
 import { Image } from "astro:assets"
 import aceCoins from "../../images/cbd_tarot/d01.jpg"
 import twoCups from "../../images/cbd_tarot/c02.jpg"
-import threeBations from "../../images/cbd_tarot/b03.jpg"
+import threeBatons from "../../images/cbd_tarot/b03.jpg"
 import fiveBatons from "../../images/cbd_tarot/b05.jpg"
 import sixCoins from "../../images/cbd_tarot/d06.jpg"
 import sevenCups from "../../images/cbd_tarot/c07.jpg"
@@ -32,19 +32,17 @@ You just need a few things to get started with this class, so get your supplies 
 
 ### Buying a Deck
 
-<div class="hero">
 <div class="card-row">
 
 <img src={fiveBatons.src} alt="Five of Batons" title="Five of Batons"/>
 <img src={sixCoins.src} alt="Six of Coins" title="Six of Coins"/>
 <img src={sevenCups.src} alt="Seven of Cups" title="Seven of Cups" />
-</div>
+<img src={aceCoins.src} alt="Ace of Coins" title="Ace of Coins" class="hidden"/>
+<img src={threeBatons.src} alt="Three of Batons" title="Three of Batons" class="hidden" />
+<img src={twoCups.src} alt="Two of Cups" title="Two of Cups" class="hidden" />
 
-<div class="card-row">
-<img src={aceCoins.src}/>
-<img src={twoCups.src}/>
-<img src={threeBations.src}/>
-</div>
+
+
 </div>
 Agnostic Tarot uses the Tarot de Marseille deck. It is a so-called "pip deck", meaning the number cards do not have scenes on them. They are like playing cards, showing just the suit symbol times the number, the 7 of cups for example only shows 7 cups. There are flourishes, flowers and other decorative elements - but there is no scene featuring a person, unlike most tarot decks today.
 
