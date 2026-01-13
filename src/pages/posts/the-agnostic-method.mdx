@@ -12,6 +12,14 @@ image: {
 }
 ---
 
+import { Image } from "astro:assets"
+import aceBatons from "../../images/cbd_tarot/b01.jpg"
+import sevenCoins from "../../images/cbd_tarot/d07.jpg"
+import nineCups from "../../images/cbd_tarot/c09.jpg"
+import aceCups from "../../images/cbd_tarot/c01.jpg"
+import jackSwords from "../../images/cbd_tarot/e12.jpg"
+import queenCoins from "../../images/cbd_tarot/d13.jpg"
+import justice from "../../images/cbd_tarot/a08.jpg"
 
 The agnostic method for card reading is a way to memorize the keywords and practice reading cards through repetition, not relying on anything deep or elaborate. What you need:
 <ul class="rt-margin">
@@ -28,9 +36,21 @@ _note: These readings are anonymous, they are not for a certain person or about 
 1. Shuffle the cards
 2. Draw three cards and lay them in a row
 3. Write down the keyword for each card _(only the keyword, not the rank/suit or title of the card)_
-4. Build a story based on those words and the illustrations on the cards and write it down, it should be a short sentence at most.
+4. Build a reading based on those words and the illustrations on the cards and write it down, it should be a short sentence at most.
 5. Repeat 3 - 10 times
 </ol>
+
+<div class="card-row">
+<img src={aceBatons.src} alt="Ace of Batons" title="keyword: new" />
+<img src={sevenCoins.src} alt="Seven of Coins" title="keyword: reflection" />
+<img src={nineCups.src} alt="Nine of Cups" title="keyword: attain" />
+</div>
+
+_if you hover on the card images you will see the keyword!_
+
+**Possible interpretation based on the keywords and images:**
+
+Starting a new project or task, You already have the resources you need, You will complete the project.
 
 You should not spend much time on these, as soon as the ideas dry up move on to the next one. There are no right or wrong meanings or answers. Some cards may leave you with a blank, just move on. 
 
@@ -40,6 +60,12 @@ The positions of the cards do not matter unless something sticks out to you. We 
 
 Calculate the cards to get the theme of the reading and / or the advice. You can do this to spend more time on each reading and get additional information from the cards. 
 
+<div class="card-row">
+<img src={aceCups.src} alt="Ace of Cups" title="new" />
+<img src={jackSwords.src} alt="Jack of Swords" title="action" />
+<img src={queenCoins.src} alt="Queen of Coins" title="patience" />
+</div>
+
 <ol class="rt-margin numerals">
 1. Add up the total of the three cards you have drawn
 2. Reduce the total to a number between 1 - 9
@@ -48,11 +74,23 @@ Calculate the cards to get the theme of the reading and / or the advice. You can
 4. Think about how it ties in with your three cards
 </ol>
 
-*For example* if you drew an ace of cups (1), a 3 of swords (3), and a six of coins (6) - you would add them together for a total of ten (10), which you could then reduce to a one (1 + 0 = 1). The keywords are "new" (1) and "finished" (10). You would draw the Wheel of Fortune (10), and the Juggler (1).
+*For example* if you drew an ace of cups (1), a knight of Swords (12 / 3), and a queen of coins (13 / 4)) - you would add them together for a total of twenty six, 2 + 6 = 8. (26 / 8). The keyword is "Progress". You would draw Justice (8).
+
+<div class="card-row">
+<img src={aceCups.src} alt="Ace of Cups" title="new" />
+<img src={jackSwords.src} alt="Jack of Swords" title="action" />
+<img src={queenCoins.src} alt="Queen of Coins" title="patience" />
+<img src={justice.src} alt="Justice" title="fairness / 8 = progress" />
+
+</div>
 
 **Possible interpretation based on calculated total:**
 
-_Something is coming to completion, something is starting. Life is changing, having to do with work._
+_a new passion, calling you to action, have patience, you are doing better than you think._
+
+Theme: Progress (8)
+
+Advice: Be fair, stay centered. (Justice)
 
 From there you could integrate the keywords from each of the three cards, and the images to keep going. Listen to any ideas that pop into your head and trust your intuition.
 
@@ -64,7 +102,7 @@ Keep a deck handy, you can do a spread or two whenever you feel like it. You can
 
 Assign a meaning to each position in the spread. Before, Now, Later. Me, Us, You. Pro, Idea, Con. You can come up with anything that you want. You can even do it after you lay the cards down! It works, try it.
 
-Read according to the suits. If you draw three cups, is the reading about a relationship? Or a feast? It is up to you!
+Read according to the suits. If you draw three cards and they are all cups, is the reading about a relationship? Or a feast? It is up to you!
 
 
 ### Next
